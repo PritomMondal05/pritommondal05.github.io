@@ -96,7 +96,7 @@ The application will open at `http://localhost:3000`
 - **CSS Variables**: Consistent theming
 - **Responsive Design**: Mobile-first approach
 - **Animations**: Smooth transitions and hover effects
-- **Font Loading**: Custom Inter font family
+- **Font Loading**: Custom Plus Jakarta Sans font family
 - **Grid Layouts**: Modern CSS Grid for layouts
 
 ## Technologies Used
