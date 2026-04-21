@@ -1812,3 +1812,57 @@ body {
     bottom: -10%;
     right: -5%;
 }
+
+
+/* Preloader */
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+    color: var(--text-white);
+    z-index: 9999;
+}
+
+.preloader-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.preloader-img {
+    width: clamp(60px, 10vw, 120px);
+    height: auto;
+    filter: brightness(0) invert(1);
+}
+
+.preloader-counter {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.counter-line {
+    width: 40px;
+    height: 2px;
+    background-color: #555555;
+    margin-bottom: 0.5rem;
+}
+
+.counter {
+    font-size: clamp(3rem, 8vw, 5rem);
+    font-weight: 700;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    line-height: 1;
+}
+
+body.no-scroll {
+    overflow: hidden;
+}

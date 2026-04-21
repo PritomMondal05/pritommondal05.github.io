@@ -7,12 +7,47 @@ document.addEventListener('DOMContentLoaded', function() {
     initSmoothScrolling();
     initNavigation();
     initHoverEffects();
-    initPageLoadAnimation();
-    initHeroGSAP();
     initCurrentDate();
     initCertificateCarousel();
     initProjectGSAPSlider();
+    
+    if (document.querySelector('.preloader')) {
+        initPreloader();
+    } else {
+        initPageLoadAnimation();
+        initHeroGSAP();
+    }
 });
+
+function initPreloader() {
+    const preloaderElement = document.querySelector('.preloader');
+    const counterElement = document.querySelector('.counter');
+    
+    if (!preloaderElement) return;
+    
+    let counter = { value: 0 };
+    
+    gsap.to(counter, {
+        value: 100,
+        duration: 2.5,
+        ease: "power2.inOut",
+        onUpdate: function() {
+            if (counterElement) counterElement.textContent = Math.round(counter.value);
+        },
+        onComplete: function() {
+            gsap.to(preloaderElement, {
+                yPercent: -100,
+                duration: 1,
+                ease: "power3.inOut",
+                onComplete: () => {
+                    document.body.classList.remove('no-scroll');
+                    if (typeof initPageLoadAnimation === 'function') initPageLoadAnimation();
+                    if (typeof initHeroGSAP === 'function') initHeroGSAP();
+                }
+            });
+        }
+    });
+}
 
 // Scroll Animations using Intersection Observer
 function initScrollAnimations() {
