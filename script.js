@@ -8,9 +8,10 @@ document.addEventListener('DOMContentLoaded', function() {
     initNavigation();
     initHoverEffects();
     initPageLoadAnimation();
-    initChangingWords();
+    initHeroGSAP();
     initCurrentDate();
     initCertificateCarousel();
+    initProjectGSAPSlider();
 });
 
 // Scroll Animations using Intersection Observer
@@ -199,39 +200,46 @@ function debounce(func, wait) {
     };
 }
 
-// Changing Words Animation
-function initChangingWords() {
-    const words = [
-        'Digital Storyteller',
-        'Student', 
-        'Learner',
-        'Problem Solver',
-        'Designer'
-    ];
+// GSAP Hero Animation
+function initHeroGSAP() {
+    if (typeof gsap === 'undefined') return;
+
+    // Entrance Animation
+    const tl = gsap.timeline();
     
-    const changingWordElement = document.getElementById('changingWord');
-    let currentWordIndex = 0;
-    
-    if (!changingWordElement) return;
-    
-    function changeWord() {
-        // Fade out current word
-        changingWordElement.style.animation = 'wordFadeOut 0.4s ease-in-out forwards';
-        
-        setTimeout(() => {
-            // Change the word
-            currentWordIndex = (currentWordIndex + 1) % words.length;
-            changingWordElement.textContent = words[currentWordIndex];
-            
-            // Fade in new word
-            changingWordElement.style.animation = 'wordFadeIn 0.6s ease-in-out forwards';
-        }, 400);
-    }
-    
-    // Start the word changing cycle after initial load
-    setTimeout(() => {
-        setInterval(changeWord, 3000); // Change word every 3 seconds
-    }, 2000); // Wait 2 seconds before starting
+    tl.from('.hero-intro', {
+        opacity: 0,
+        y: 20,
+        duration: 0.8,
+        ease: 'power2.out',
+        delay: 0.2
+    })
+    .from('.hero-name', {
+        opacity: 0,
+        y: 30,
+        duration: 0.8,
+        ease: 'power2.out'
+    }, '-=0.4')
+    .from('.hero-pill, .floating-hero-image, .section-floating-img', {
+        opacity: 0,
+        scale: 0.5,
+        duration: 0.6,
+        stagger: 0.15,
+        ease: 'back.out(1.7)'
+    }, '-=0.2');
+
+    // Continuous floating animation
+    gsap.utils.toArray('.hero-pill, .floating-hero-image, .section-floating-img').forEach((pill, i) => {
+        gsap.to(pill, {
+            y: 'random(-15, 15)',
+            rotation: '+=random(-5, 5)',
+            duration: 'random(2, 4)',
+            ease: 'sine.inOut',
+            repeat: -1,
+            yoyo: true,
+            delay: i * 0.2
+        });
+    });
 }
 
 // Current Date Update
@@ -319,3 +327,106 @@ console.log(`
 🎨 Designed for performance and accessibility
 📱 Fully responsive and interactive
 `);
+// GSAP Project Slider Animation
+function initProjectGSAPSlider() {
+    if (typeof gsap === 'undefined') return;
+
+    const slides = document.querySelectorAll('.project-slide');
+    if (slides.length === 0) return;
+
+    const nextBtn = document.querySelector('.next-btn');
+    const prevBtn = document.querySelector('.prev-btn');
+    
+    let currentIndex = 0;
+    let isAnimating = false;
+
+    // Make sure initial state is fully visible for active slide
+    const firstSlide = slides[0];
+    gsap.set(firstSlide.querySelector('.mockup-img'), { x: 0, opacity: 1 });
+    gsap.set(firstSlide.querySelectorAll('.project-heading, .project-desc, .project-meta, .project-brand, .project-tags'), { y: 0, opacity: 1 });
+
+    function goToSlide(index) {
+        if (isAnimating || index === currentIndex) return;
+        isAnimating = true;
+
+        const currentSlide = slides[currentIndex];
+        const nextSlide = slides[index];
+
+        // Ensure next slide is visible but transparent
+        nextSlide.classList.add('active');
+        
+        const tl = gsap.timeline({
+            onComplete: () => {
+                currentSlide.classList.remove('active');
+                gsap.set(currentSlide, { clearProps: 'all' });
+                currentIndex = index;
+                isAnimating = false;
+            }
+        });
+
+        // Current slide out animation
+        tl.to(currentSlide.querySelector('.mockup-img'), {
+            x: -50,
+            opacity: 0,
+            duration: 0.6,
+            ease: 'power2.in'
+        }, 0)
+        .to(currentSlide.querySelectorAll('.project-heading, .project-desc, .project-meta, .project-brand, .project-tags'), {
+            y: -20,
+            opacity: 0,
+            duration: 0.4,
+            stagger: 0.05,
+            ease: 'power2.in'
+        }, 0);
+
+        // Next slide in animation setup
+        gsap.set(nextSlide.querySelector('.mockup-img'), { x: 50, opacity: 0 });
+        gsap.set(nextSlide.querySelectorAll('.project-heading, .project-desc, .project-meta, .project-brand, .project-tags'), { y: 20, opacity: 0 });
+
+        // Next slide in animation
+        tl.to(nextSlide.querySelector('.mockup-img'), {
+            x: 0,
+            opacity: 1,
+            duration: 0.8,
+            ease: 'power2.out'
+        }, 0.4)
+        .to(nextSlide.querySelectorAll('.project-heading, .project-desc, .project-meta, .project-brand, .project-tags'), {
+            y: 0,
+            opacity: 1,
+            duration: 0.6,
+            stagger: 0.1,
+            ease: 'power2.out'
+        }, 0.5);
+    }
+
+    if (nextBtn) {
+        nextBtn.addEventListener('click', () => {
+            const nextIndex = (currentIndex + 1) % slides.length;
+            goToSlide(nextIndex);
+        });
+    }
+
+    if (prevBtn) {
+        prevBtn.addEventListener('click', () => {
+            const prevIndex = (currentIndex - 1 + slides.length) % slides.length;
+            goToSlide(prevIndex);
+        });
+    }
+
+    // Add mouse wheel scroll support
+    window.addEventListener('wheel', (e) => {
+        // Check if we are on the projects page by making sure slider exists
+        const sliderContainer = document.querySelector('.project-slider-container');
+        if(!sliderContainer) return;
+
+        if (isAnimating) return;
+        
+        if (e.deltaY > 50) {
+            const nextIndex = (currentIndex + 1) % slides.length;
+            goToSlide(nextIndex);
+        } else if (e.deltaY < -50) {
+            const prevIndex = (currentIndex - 1 + slides.length) % slides.length;
+            goToSlide(prevIndex);
+        }
+    });
+}

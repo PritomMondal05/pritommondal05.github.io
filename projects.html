@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects - Pritom Mondal</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="Image/navicon_pritom web-1.png">
 </head>
 
 <body>
@@ -14,108 +15,257 @@
         <div class="header-container">
             <nav class="nav-links">
                 <a href="index.html" class="nav-link">About</a>
-                <a href="projects.html" class="nav-link"
-                    style="background-color: var(--accent-blue); color: var(--text-white);">Projects</a>
-                <a href="certificates.html" class="nav-link">Certificate</a>
+                <a href="projects.html" class="nav-link">Projects</a>
                 <a href="blogs.html" class="nav-link">Blog</a>
                 <a href="contact.html" class="nav-link">Contact</a>
             </nav>
             <button class="resume-btn">
-                <span>RESUME</span>
+                <a href="https://drive.google.com/file/d/1e5-CP3AB7VWY6UyfhyzO1Z9jJcnvUvpZ/view?usp=sharing">RESUME</a>
                 <img src="SVG/arrow 2.svg" alt="Arrow" class="resume-icon">
             </button>
         </div>
     </header>
 
 
-    <!-- Projects Content Section (Simplified) -->
-    <section class="experience">
-        <div class="experience-container">
-            <div class="section-header">
-                <div class="section-underline"></div>
-                <h2 class="section-title">My Projects</h2>
+    <!-- Project Showcase Section with GSAP Slider -->
+    <section class="project-showcase">
+        <div class="project-slider-container">
+            <!-- Project 1 -->
+            <div class="project-slide active">
+                <div class="project-visuals">
+                    <div class="visual-grid-placeholder">
+                        <img src="Image/gallery_3.png" alt="Project Visuals" class="mockup-img"
+                            onerror="this.src='Image/navicon_pritom web-1.png'">
+                    </div>
+                    <div class="slide-counter">01</div>
+                </div>
+                <div class="project-details">
+                    <div class="project-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">VISIT SITE</span>
+                            <a href="#" class="meta-value">SLABPIXEL.COM</a>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">LOCATION</span>
+                            <span class="meta-value">YOGYAKARTA, INDONESIA</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">DATE</span>
+                            <span class="meta-value">JAN 2021 — PRESENT</span>
+                        </div>
+                    </div>
+
+                    <div class="project-brand">
+                        <img src="Image/navicon_pritom web-1.png" alt="Brand Logo" class="brand-logo"
+                            onerror="this.style.display='none'">
+                        <span>SlabPixel</span>
+                    </div>
+
+                    <h2 class="project-heading">Efficient and High-Performing Team to Execute All The Work</h2>
+
+                    <div class="project-tags">
+                        <span class="tag-outline">Visual Branding</span>
+                        <span class="tag-outline">UI&UX</span>
+                        <span class="tag-outline">Graphic Design</span>
+                        <span class="tag-outline">Motion & Interaction</span>
+                        <span class="tag-outline">Web Development</span>
+                    </div>
+
+                    <p class="project-desc">Just like a windmill that converts wind power into rotational energy,
+                        SlabPixel has that ability too. Windmill from the SlabPixel logo reflects our capability to
+                        convert "High-Skill" power into the design energy that your company needs.</p>
+                </div>
             </div>
-            <div class="experience-content">
-                <div class="experience-card">
-                    <div class="card-content">
-                        <h3 class="company-name">Project Title 1</h3>
-                        <p class="role">Tech: React, Node.js, MongoDB</p>
-                        <p class="description">Brief description of the project and its key features. I've worked on
-                            diverse projects that combine technology, creativity, and problem-solving.</p>
+
+            <!-- Project 2 -->
+            <div class="project-slide">
+                <div class="project-visuals">
+                    <div class="visual-grid-placeholder">
+                        <img src="Image/gallery_1.png" alt="Project Visuals" class="mockup-img"
+                            onerror="this.src='Image/navicon_pritom web-1.png'">
                     </div>
-                    <div class="date-badge">View Project</div>
+                    <div class="slide-counter">02</div>
                 </div>
-                <div class="experience-card">
-                    <div class="card-content">
-                        <h3 class="company-name">Project Title 2</h3>
-                        <p class="role">Tech: Vue.js, Express, PostgreSQL</p>
-                        <p class="description">Brief description of the project and its key features. Each project
-                            represents a unique challenge and learning opportunity.</p>
+                <div class="project-details">
+                    <div class="project-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">VISIT SITE</span>
+                            <a href="#" class="meta-value">NEXUS.DEV</a>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">LOCATION</span>
+                            <span class="meta-value">DHAKA, BANGLADESH</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">DATE</span>
+                            <span class="meta-value">MAR 2023 — PRESENT</span>
+                        </div>
                     </div>
-                    <div class="date-badge">View Project</div>
-                </div>
-                <div class="experience-card">
-                    <div class="card-content">
-                        <h3 class="company-name">Project Title 3</h3>
-                        <p class="role">Tech: Python, Django, MySQL</p>
-                        <p class="description">Brief description of the project and its key features. Showcasing my
-                            skills in development, design, and innovation.</p>
+
+                    <div class="project-brand">
+                        <img src="Image/navicon_pritom web-1.png" alt="Brand Logo" class="brand-logo"
+                            onerror="this.style.display='none'">
+                        <span>Nexus</span>
                     </div>
-                    <div class="date-badge">View Project</div>
-                </div>
-                <div class="experience-card">
-                    <div class="card-content">
-                        <h3 class="company-name">Project Title 4</h3>
-                        <p class="role">Tech: JavaScript, Firebase, CSS3</p>
-                        <p class="description">Brief description of the project and its key features.</p>
+
+                    <h2 class="project-heading">Next-Generation Mobile Experiences</h2>
+
+                    <div class="project-tags">
+                        <span class="tag-outline">Mobile App</span>
+                        <span class="tag-outline">Flutter</span>
+                        <span class="tag-outline">UX Design</span>
                     </div>
-                    <div class="date-badge">View Project</div>
+
+                    <p class="project-desc">Creating seamless and engaging mobile experiences that connect users to
+                        digital services effortlessly. We focus on performance and usability.</p>
                 </div>
             </div>
+
+            <!-- Project 3 -->
+            <div class="project-slide">
+                <div class="project-visuals">
+                    <div class="visual-grid-placeholder">
+                        <img src="Image/gallery_2.png" alt="Project Visuals" class="mockup-img"
+                            onerror="this.src='Image/navicon_pritom web-1.png'">
+                    </div>
+                    <div class="slide-counter">03</div>
+                </div>
+                <div class="project-details">
+                    <div class="project-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">VISIT SITE</span>
+                            <a href="#" class="meta-value">FINTECH.IO</a>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">LOCATION</span>
+                            <span class="meta-value">REMOTE</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">DATE</span>
+                            <span class="meta-value">FEB 2022 — JAN 2023</span>
+                        </div>
+                    </div>
+
+                    <div class="project-brand">
+                        <img src="Image/navicon_pritom web-1.png" alt="Brand Logo" class="brand-logo"
+                            onerror="this.style.display='none'">
+                        <span>FinTech IO</span>
+                    </div>
+
+                    <h2 class="project-heading">Secure and Scalable Financial Dashboards</h2>
+
+                    <div class="project-tags">
+                        <span class="tag-outline">Dashboard</span>
+                        <span class="tag-outline">React</span>
+                        <span class="tag-outline">Data Vis</span>
+                    </div>
+
+                    <p class="project-desc">Empowering users with real-time financial insights through a robust,
+                        scalable, and intuitive dashboard interface.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Project 4 -->
+        <div class="project-slide">
+            <div class="project-visuals">
+                <div class="visual-grid-placeholder">
+                    <img src="Image/gallery_2.png" alt="Project Visuals" class="mockup-img"
+                        onerror="this.src='Image/navicon_pritom web-1.png'">
+                </div>
+                <div class="slide-counter">04</div>
+            </div>
+            <div class="project-details">
+                <div class="project-meta">
+                    <div class="meta-item">
+                        <span class="meta-label">VISIT SITE</span>
+                        <a href="#" class="meta-value">FINTECH.IO</a>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">LOCATION</span>
+                        <span class="meta-value">REMOTE</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">DATE</span>
+                        <span class="meta-value">FEB 2022 — JAN 2023</span>
+                    </div>
+                </div>
+
+                <div class="project-brand">
+                    <img src="Image/navicon_pritom web-1.png" alt="Brand Logo" class="brand-logo"
+                        onerror="this.style.display='none'">
+                    <span>FinTech IO</span>
+                </div>
+
+                <h2 class="project-heading">Secure and Scalable Financial Dashboards</h2>
+
+                <div class="project-tags">
+                    <span class="tag-outline">Dashboard</span>
+                    <span class="tag-outline">React</span>
+                    <span class="tag-outline">Data Vis</span>
+                </div>
+
+                <p class="project-desc">Empowering users with real-time financial insights through a robust,
+                    scalable, and intuitive dashboard interface.</p>
+            </div>
+        </div>
+        </div>
+
+        <!-- Slider Navigation Controls -->
+        <div class="slider-controls">
+            <button class="slider-btn prev-btn" aria-label="Previous Project">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+            </button>
+            <button class="slider-btn next-btn" aria-label="Next Project">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </button>
         </div>
     </section>
-
-    <!-- Contact Section (Imported from index.html) -->
-    <section id="contact" class="contact">
-        <div class="contact-container">
-            <h2 class="contact-title">Ready to make something awesome?<br>Let's Connect !</h2>
-            <div class="contact-info">
-                <h3 class="contact-name">PRITOM MONDAL</h3>
-                <div class="contact-details">
-                    <a href="mailto:contact.pritommondal@gmail.com"
-                        class="contact-email">contact.pritommondal@gmail.com</a>
-                    <span class="contact-separator">|</span>
-                    <span class="contact-phone">+880 1518 700-728</span>
+    <!-- Site Footer -->
+    <footer class="site-footer" id="contact">
+        <div class="footer-container">
+            <div class="footer-top">
+                <img src="Image/namaste image.png" alt="Waving Avatar" class="site-footer-avatar">
+                <h2 class="site-footer-title">Let me know if you want to talk<br>about your potential collaboration!
+                </h2>
+                <a href="https://wa.me/8801518700728?text=Hello%20I%20want%20to%20contact%20you"
+                    class="site-footer-cta">
+                    Text me on WhatsApp
+                </a>
+                <p class="site-footer-email-box">
+                    or, if you prefer to email me instead? click to copy <span class="site-footer-email"
+                        onclick="navigator.clipboard.writeText('contact.pritommondal@gmail.com')">contact.pritommondal@gmail.com</span>
+                </p>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+                    <span class="follow-text">FOLLOW ME ON</span>
+                    <div class="arrow-line-minimal"></div>
+                    <span class="social-text">SOCIAL MEDIA</span>
+                </div>
+                <div class="footer-bottom-right">
+                    <a href="https://github.com/PritomMondal05" target="_blank" class="social-icon"><img
+                            src="SVG/github.svg" alt="GitHub"></a>
+                    <a href="https://www.linkedin.com/in/pritommondal/" target="_blank" class="social-icon"><img
+                            src="SVG/linkedin.svg" alt="LinkedIn"></a>
+                    <a href="https://www.behance.net/pritommondal" target="_blank" class="social-icon"><img
+                            src="SVG/behance.svg" alt="Behance"></a>
+                    <a href="https://www.instagram.com/pritommondal_/" target="_blank" class="social-icon"><img
+                            src="SVG/instagram.svg" alt="Instagram"></a>
                 </div>
             </div>
-            <div class="contact-buttons">
-                <div class="button-row">
-                    <a href="https://www.linkedin.com/in/pritommondal/" target="_blank" class="contact-btn">LINKEDIN</a>
-                    <a href="https://github.com/PritomMondal05" target="_blank" class="contact-btn">GITHUB</a>
-                    <a href="https://www.instagram.com/pritommondal_/" target="_blank" class="contact-btn">INSTAGRAM</a>
-                    <a href="https://www.behance.net/pritommondal" target="_blank" class="contact-btn">BEHANCE</a>
-                </div>
-                <div class="button-row">
-                    <a href="blogs.html" class="contact-btn">BLOGS</a>
-                    <a href="projects.html" class="contact-btn">PROJECTS</a>
-                    <a href="certificates.html" class="contact-btn">CERTIFICATE</a>
-                </div>
-            </div>
-            <p class="copyright">© All rights reserved by Pritom Mondal</p>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-background">
-            <img src="Image/footer gradient BG.png" alt="Footer Background" class="footer-bg-image">
-        </div>
-        <div class="footer-title">
-            <img src="SVG/footer title.svg" alt="PRITOM MON" class="footer-title-svg">
         </div>
     </footer>
 
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="script.js"></script>
 </body>
 

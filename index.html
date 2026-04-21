@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pritom Mondal</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="Image/navicon_pritom web-1.png">
 </head>
 
 <body>
@@ -13,14 +14,13 @@
     <header class="header">
         <div class="header-container">
             <nav class="nav-links">
-                <a href="#about" class="nav-link">About</a>
+                <a href="index.html" class="nav-link">About</a>
                 <a href="projects.html" class="nav-link">Projects</a>
-                <a href="certificates.html" class="nav-link">Certificate</a>
                 <a href="blogs.html" class="nav-link">Blog</a>
                 <a href="contact.html" class="nav-link">Contact</a>
             </nav>
             <button class="resume-btn">
-                <span>RESUME</span>
+                <a href="https://drive.google.com/file/d/1e5-CP3AB7VWY6UyfhyzO1Z9jJcnvUvpZ/view?usp=sharing">RESUME</a>
                 <img src="SVG/arrow 2.svg" alt="Arrow" class="resume-icon">
             </button>
         </div>
@@ -29,12 +29,19 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-container">
-            <div class="hero-title-container">
-                <img src="SVG/Hero Title.svg" alt="PRITOM MONDAL" class="hero-title-svg">
+            <div class="hero-content-wrapper">
+                <div class="hero-left">
+                    <h2 class="hero-intro">Hi! It's</h2>
+                    <h1 class="hero-name">PRITOM<br>MONDAL</h1>
+                </div>
+                <div class="hero-right">
+                    <img src="Image/floating iamge.png" alt="Floating Avatar" class="floating-hero-image">
+                    <div class="hero-pill pill-1">Learner</div>
+                    <div class="hero-pill pill-2">Developer</div>
+                    <div class="hero-pill pill-3">Desinger</div>
+                    <div class="hero-pill pill-4">Problem Solver</div>
+                </div>
             </div>
-            <p class="hero-subtitle">
-                I'm a <span class="changing-word" id="changingWord">Digital Storyteller</span>
-            </p>
             <div class="hero-bottom">
                 <span class="hero-date" id="currentDate">10,October,2025</span>
                 <div class="hero-line"></div>
@@ -107,11 +114,13 @@
                 </div>
             </div>
         </div>
+
     </section>
 
     <!-- Education Section -->
     <section id="education" class="education">
-        <div class="education-container">
+        <div class="education-container relative-container">
+            <img src="Image/education image.png" alt="Education Floating" class="section-floating-img float-edu-right">
             <div class="section-header">
                 <div class="section-underline"></div>
                 <h2 class="section-title">Education</h2>
@@ -121,7 +130,7 @@
                     <div class="card-content">
                         <h3 class="institution-name">BRAC University</h3>
                         <p class="degree">Bachelor of Science in Computer Science and Engineering</p>
-                        <p class="gpa">CGPA: 3.45/4.00</p>
+                        <p class="gpa">CGPA: 3.41/4.00</p>
                     </div>
                     <div class="date-badge">2022-Present</div>
                 </div>
@@ -147,7 +156,8 @@
 
     <!-- Work Experience Section -->
     <section id="experience" class="experience">
-        <div class="experience-container">
+        <div class="experience-container relative-container">
+            <img src="Image/working image.png" alt="Working Floating" class="section-floating-img float-exp-left">
             <div class="section-header">
                 <div class="section-underline"></div>
                 <h2 class="section-title">Work Experience</h2>
@@ -177,7 +187,7 @@
                 </div>
                 <div class="experience-card">
                     <div class="card-content">
-                        <h3 class="company-name">Pagla Ghora</h3>
+                        <h3 class="company-name">PGXR</h3>
                         <p class="role">Founder</p>
                         <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
                             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -201,7 +211,8 @@
 
     <!-- Leadership & Extracurriculars Section -->
     <section id="leadership" class="leadership">
-        <div class="leadership-container">
+        <div class="leadership-container relative-container">
+            <img src="Image/leader image.png" alt="Leader Floating" class="section-floating-img float-lead-right">
             <div class="section-header">
                 <div class="section-underline"></div>
                 <h2 class="section-title">Leadership & Extracurriculars</h2>
@@ -249,63 +260,74 @@
                     </div>
                     <div class="date-badge">Nov'17 - Dec'18</div>
                 </div>
+            </div>
+        </div>
+    </section>
 
-                <div class="more-info">
-                    <p>Here is more</p>
-                    <div class="arrow-line"></div>
-                    <div class="arrow-icon">↓</div>
+    <!-- skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="skills-container relative-container">
+            <img src="Image/bulb image.png" alt="Bulb Floating" class="section-floating-img float-skills-tl">
+            <img src="Image/mac image.png" alt="Mac Floating" class="section-floating-img float-skills-tr">
+            <img src="Image/mic image.png" alt="Mic Floating" class="section-floating-img float-skills-br">
+
+            <h2 class="skills-title">Skills That Solves Problems</h2>
+
+            <div class="services-content">
+                <!-- Column 1 -->
+                <div class="service-column">
+                    <div class="skill-card">
+                        <div class="card-content">
+                            <h3 class="service-heading" style="color: #000000;">Programming Languages</h3>
+                            <p class="service-desc">C, Java, Python, JavaScript</p>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="card-content">
+                            <h3 class="service-heading" style="color: #000000;">Web Technologies</h3>
+                            <p class="service-desc">HTML, CSS, Bootstrap, React, Node.js, Flutter</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="service-column">
+                    <div class="skill-card">
+                        <div class="card-content">
+                            <h3 class="service-heading" style="color: #011EFF;">Database Systems</h3>
+                            <p class="service-desc">MySQL, MongoDB, Firebase</p>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="card-content">
+                            <h3 class="service-heading" style="color: #011EFF;">Specialized Area</h3>
+                            <p class="service-desc">UI/UX Design, Motion Graphics, Event Branding, Robotics</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 3 -->
+                <div class="service-column">
+                    <div class="skill-card">
+                        <div class="card-content">
+                            <h3 class="service-heading" style="color: #000000;">Other Tools & Technologies</h3>
+                            <p class="service-desc">Figma, Photoshop, Illustrator, After Effects, Premiere Pro, Blender,
+                                Lightroom, Canva</p>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="card-content">
+                            <h3 class="service-heading" style="color: #000000;">Research Skills</h3>
+                            <p class="service-desc">Problem Analysis, Data Collection, Technical Writing, Literature
+                                Review, Experimentation, Statistical Analysis</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Navigation Boxes Section -->
-    <section id="navigation-boxes" class="navigation-boxes">
-        <div class="nav-boxes-container">
-            <a href="projects.html" class="nav-box active">
-                <div class="nav-box-left">
-                    <span class="nav-box-text">Projects</span>
-                </div>
-                <div class="nav-box-right">
-                    <div class="nav-box-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <path d="M7 17L17 7" />
-                            <path d="M7 7h10v10" />
-                        </svg>
-                    </div>
-                </div>
-            </a>
-            <a href="blogs.html" class="nav-box">
-                <div class="nav-box-left">
-                    <span class="nav-box-text">Blogs</span>
-                </div>
-                <div class="nav-box-right">
-                    <div class="nav-box-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <path d="M7 17L17 7" />
-                            <path d="M7 7h10v10" />
-                        </svg>
-                    </div>
-                </div>
-            </a>
-            <a href="certificates.html" class="nav-box">
-                <div class="nav-box-left">
-                    <span class="nav-box-text">Certificates</span>
-                </div>
-                <div class="nav-box-right">
-                    <div class="nav-box-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <path d="M7 17L17 7" />
-                            <path d="M7 7h10v10" />
-                        </svg>
-                    </div>
-                </div>
-            </a>
-        </div>
-    </section>
+
 
     <!-- Gallery Section -->
     <section id="gallery" class="gallery">
@@ -314,7 +336,10 @@
                 <div class="gallery-intro">
 
                     <p class="gallery-subtitle">Impact Designer</p>
-                    <h2 class="gallery-title">That's me!</h2>
+                    <h2 class="gallery-title" style="position: relative; display: inline-block;">That's me!
+                        <img src="Image/me image.png" alt="That's Me Floating"
+                            class="section-floating-img float-gallery-right">
+                    </h2>
                 </div>
                 <div class="gallery-description">
                     <p>Over the past few years, I've collaborated with diverse teams and organizations, leading projects
@@ -330,48 +355,43 @@
                 <img src="Image/image for about/IMG_4.png" alt="Portrait Shot" class="gallery-img right-img">
             </div>
         </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="contact-container">
-            <h2 class="contact-title">Ready to make something awesome?<br>Let's Connect !</h2>
-            <div class="contact-info">
-                <h3 class="contact-name">PRITOM MONDAL</h3>
-                <div class="contact-details">
-                    <a href="mailto:contact.pritommondal@gmail.com"
-                        class="contact-email">contact.pritommondal@gmail.com</a>
-                    <span class="contact-separator">|</span>
-                    <span class="contact-phone">+880 1518 700-728</span>
+    </section> <!-- Site Footer -->
+    <footer class="site-footer" id="contact">
+        <div class="footer-container">
+            <div class="footer-top">
+                <img src="Image/namaste image.png" alt="Waving Avatar" class="site-footer-avatar">
+                <h2 class="site-footer-title">Let me know if you want to talk<br>about your potential collaboration!
+                </h2>
+                <a href="https://wa.me/8801518700728?text=Hello%20I%20want%20to%20contact%20you"
+                    class="site-footer-cta">
+                    Text me on WhatsApp
+                </a>
+                <p class="site-footer-email-box">
+                    or, if you prefer to email me instead? click to copy <span class="site-footer-email"
+                        onclick="navigator.clipboard.writeText('contact.pritommondal@gmail.com')">contact.pritommondal@gmail.com</span>
+                </p>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+                    <span class="follow-text">FOLLOW ME ON</span>
+                    <div class="arrow-line-minimal"></div>
+                    <span class="social-text">SOCIAL MEDIA</span>
+                </div>
+                <div class="footer-bottom-right">
+                    <a href="https://github.com/PritomMondal05" target="_blank" class="social-icon"><img
+                            src="SVG/github.svg" alt="GitHub"></a>
+                    <a href="https://www.linkedin.com/in/pritommondal/" target="_blank" class="social-icon"><img
+                            src="SVG/linkedin.svg" alt="LinkedIn"></a>
+                    <a href="https://www.behance.net/pritommondal" target="_blank" class="social-icon"><img
+                            src="SVG/behance.svg" alt="Behance"></a>
+                    <a href="https://www.instagram.com/pritommondal_/" target="_blank" class="social-icon"><img
+                            src="SVG/instagram.svg" alt="Instagram"></a>
                 </div>
             </div>
-            <div class="contact-buttons">
-                <div class="button-row">
-                    <a href="https://www.linkedin.com/in/pritommondal/" target="_blank" class="contact-btn">LINKEDIN</a>
-                    <a href="https://github.com/PritomMondal05" target="_blank" class="contact-btn">GITHUB</a>
-                    <a href="https://www.instagram.com/pritommondal_/" target="_blank" class="contact-btn">INSTAGRAM</a>
-                    <a href="https://www.behance.net/pritommondal" target="_blank" class="contact-btn">BEHANCE</a>
-                </div>
-                <div class="button-row">
-                    <a href="blogs.html" class="contact-btn">BLOGS</a>
-                    <a href="projects.html" class="contact-btn">PROJECTS</a>
-                    <a href="certificates.html" class="contact-btn">CERTIFICATE</a>
-                </div>
-            </div>
-            <p class="copyright">© All rights reserved by Pritom Mondal</p>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-background">
-            <img src="Image/footer gradient BG.png" alt="Footer Background" class="footer-bg-image">
-        </div>
-        <div class="footer-title">
-            <img src="SVG/footer title.svg" alt="PRITOM MON" class="footer-title-svg">
         </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="script.js"></script>
 </body>
 
