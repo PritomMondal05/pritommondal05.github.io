@@ -1,58 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pritom Mondal © 2026 — UI/UX Designer & Developer</title>
-  <meta name="description" content="Portfolio of Pritom Mondal — UI/UX Designer, Web Developer, and HCI Researcher based in Dhaka, Bangladesh. Founder of PGXR.">
+  <title>Pritom Mondal</title>
+  <meta name="description"
+    content="Portfolio of Pritom Mondal — UI/UX Designer, Web Developer, and HCI Researcher based in Dhaka, Bangladesh. Founder of PGXR.">
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="pm navicon.png" type="image/png">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 </head>
+
 <body>
 
-  <!-- Sticky Navigation Bar -->
-  <header class="navbar-wrapper">
-    <nav class="navbar">
-      <a href="#" class="brand-logo" aria-label="Pritom Mondal Homepage">
-        <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 299.15">
-          <g>
-            <path d="M104.97,59.45c23.02,0,41.29,8.08,54.8,24.24,13.28,16.16,19.93,37.97,19.93,65.42s-6.64,49.26-19.93,65.42c-13.51,16.16-31.77,24.24-54.8,24.24s-38.75-8.3-50.48-24.91v86.01H2.69V63.43h50.48v22.91c11.73-17.93,29-26.9,51.81-26.9ZM90.69,197.26c11.51,0,20.48-4.26,26.9-12.78,6.42-8.52,9.63-20.76,9.63-36.7,0-31.22-12.18-46.83-36.53-46.83s-36.86,16.05-36.86,48.15,12.29,48.15,36.86,48.15Z"/>
-            <path d="M301.9,60.77c.88,0,4.65.22,11.29.66v47.16h-13.28c-30.33,0-45.5,15.5-45.5,46.49v79.7h-51.81V63.43h50.48v31.88c7.97-23.02,24.24-34.54,48.82-34.54Z"/>
-            <path d="M385.92,234.79h-51.81V63.43h51.81v171.36ZM384.93,43.84h-49.48V0h49.48v43.84Z"/>
-            <path d="M515.11,63.43v37.86h-32.88v80.03c0,5.76,1.44,9.69,4.32,11.79,2.87,2.11,7.97,3.16,15.28,3.16h13.28v38.52c-6.2.88-14.17,1.33-23.91,1.33-21.48,0-36.98-3.82-46.49-11.46-9.52-7.64-14.28-20.2-14.28-37.69v-85.68h-25.57v-37.86h25.57V12.62h51.81v50.81h32.88Z"/>
-            <path d="M616.73,238.78c-27.23,0-49.04-8.19-65.42-24.57-16.39-16.38-24.57-38.08-24.57-65.09s8.19-49.04,24.57-65.42c16.16-16.16,37.97-24.24,65.42-24.24s49.26,8.08,65.42,24.24c16.16,16.16,24.24,37.97,24.24,65.42s-8.08,48.93-24.24,65.09c-16.38,16.39-38.19,24.57-65.42,24.57ZM616.73,197.26c11.96,0,21.14-4.09,27.56-12.29,6.42-8.19,9.63-20.14,9.63-35.87s-3.21-27.67-9.63-35.87c-6.42-8.19-15.61-12.29-27.56-12.29s-21.48,4.1-27.9,12.29c-6.42,8.19-9.63,20.15-9.63,35.87s3.21,27.68,9.63,35.87c6.42,8.19,15.72,12.29,27.9,12.29Z"/>
-            <path d="M935.21,59.45c18.82,0,33.54,5.59,44.17,16.77,10.63,11.18,15.94,26.96,15.94,47.32v111.25h-51.81v-102.29c0-19.26-8.53-28.89-25.57-28.89-9.08,0-16.27,3.1-21.59,9.3-5.31,6.2-7.97,15.28-7.97,27.23v94.65h-51.81v-102.29c0-19.26-8.52-28.89-25.57-28.89-9.08,0-16.33,3.1-21.75,9.3-5.43,6.2-8.14,15.28-8.14,27.23v94.65h-51.81V63.43h50.48v24.24c12.62-18.82,28.89-28.23,48.82-28.23,25.68,0,43.39,10.29,53.13,30.88,13.95-20.59,31.77-30.88,53.47-30.88Z"/>
-            <path fill="#f83823" d="M1080,234.79h-58.45v-57.12h58.45v57.12Z"/>
-          </g>
-        </svg>
-      </a>
-
-      <ul class="nav-links" id="nav-links">
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#experience" class="nav-link">Experience</a></li>
-        <li><a href="#services" class="nav-link">Services</a></li>
-        <li><a href="#education" class="nav-link">Education</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
-      </ul>
-
-      <div style="display: flex; align-items: center; gap: 8px;">
-        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle light and dark mode">
-          <span>☾</span><span>Dark Mode</span>
-        </button>
-        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle mobile menu">☰ Menu</button>
-      </div>
-    </nav>
-  </header>
-
   <main class="container">
-    
+
+    <!-- Top Bar: Today's Real-time Date & Download Resume Button -->
+    <header class="top-header-bar">
+      <div class="top-left-group">
+        <div class="date-badge">
+          <span class="date-text">28 July 2026</span>
+          <span class="date-day">Tuesday</span>
+        </div>
+      </div>
+      <a href="https://drive.google.com/file/d/1e5-CP3AB7VWY6UyfhyzO1Z9jJcnvUvpZ/view" target="_blank"
+        class="resume-download-btn" title="View Resume (Google Drive)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" style="width: 14px; height: 14px;">
+          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+          <polyline points="15 3 21 3 21 9" />
+          <line x1="10" x2="21" y1="14" y2="3" />
+        </svg>
+        <span>Resume ↗</span>
+      </a>
+    </header>
+
     <!-- Hero Section (Joshua Kaplan Style Header) -->
     <section class="hero-section" id="about">
-      <h1 class="hero-title">Pritom Mondal © 2026</h1>
+      <h1 class="hero-title">
+        <span class="hero-greeting">Hi, it's</span>
+        <span class="hero-name">Pritom Mondal</span>
+      </h1>
 
-      <!-- Color Pill Badges (Exact Joshua Kaplan Visual Reference) -->
+      <!-- Color Pill Badges -->
       <div class="pill-group">
-        <a href="https://twitter.com" target="_blank" class="pill pill-yellow">Twitter ↗</a>
+        <a href="https://twitter.com/pritommondal" target="_blank" class="pill pill-yellow">Twitter ↗</a>
         <a href="mailto:pritommondal05@gmail.com" class="pill pill-yellow">Email ↗</a>
         <span class="pill pill-blue">UI/UX Designer</span>
         <span class="pill pill-green">Co-Founder @ PGXR</span>
@@ -61,82 +54,446 @@
         <span class="pill pill-pink">Robotics Instructor</span>
       </div>
 
-      <!-- Bio & Portrait Banner Grid -->
+      <!-- Bio & Pure Portrait Grid -->
       <div class="hero-content-grid">
-        <p class="bio-text">
-          <strong>Pritom Mondal</strong> is a UI/UX designer, developer, and HCI researcher based in <strong>Dhaka, Bangladesh</strong> specializing in user-centered digital products, web development, motion graphics, and interactive simulations. He studied Computer Science & Engineering at <strong>BRAC University</strong> (CGPA 3.41/4.00) and leads creative direction at <strong>PGXR</strong> studio. He is passionate about crafting intuitive, accessible, and high-impact digital experiences.
-        </p>
+        <div>
+          <p class="bio-text">
+            <strong>Pritom Mondal</strong> is a UI/UX designer, developer, and HCI researcher based in <strong>Dhaka,
+              Bangladesh</strong> specializing in user-centered digital products, web development, motion graphics, and
+            interactive simulations. He studied Computer Science & Engineering at <strong>BRAC University</strong> and
+            leads creative direction at <strong>PGXR</strong> studio. Passionate about Human-Computer Interaction and
+            digital design, he is committed to creating accessible, innovative solutions that bridge design, software
+            development, and human-centered research.
+          </p>
 
+          <!-- Social Links (Icons Only) -->
+          <div class="social-icons-row">
+            <a href="https://github.com/pritommondal" target="_blank" class="social-icon-btn" aria-label="GitHub"
+              title="GitHub (pritommondal)">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+              </svg>
+            </a>
+            <a href="https://linkedin.com/in/pritommondal05" target="_blank" class="social-icon-btn"
+              aria-label="LinkedIn" title="LinkedIn (Pritom Mondal05)">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+              </svg>
+            </a>
+            <a href="https://behance.net/pritommondal" target="_blank" class="social-icon-btn" aria-label="Behance"
+              title="Behance (pritommondal)">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M22 7h-7v-2h7v2zm1.726 10c-.442 1.297-2.029 3-4.726 3-3.101 0-5-2.102-5-5 0-2.82 1.869-5 4.869-5 2.926 0 4.67 1.867 4.908 4.385h-6.726c.071 1.096.791 1.932 2.051 1.932.96 0 1.547-.463 1.821-1.317h2.803zm-4.743-4.523c-.975 0-1.637.584-1.777 1.458h3.535c-.097-.864-.741-1.458-1.758-1.458zm-11.983-7.477h-7v14h7.5c2.404 0 4.5-1.109 4.5-3.5 0-1.544-.82-2.584-1.92-3.084 1.157-.591 1.67-1.603 1.67-2.791 0-2.316-2.083-4.625-4.75-4.625zm-3.5 3h3.5c1.042 0 1.75.642 1.75 1.5s-.708 1.5-1.75 1.5h-3.5v-3zm0 6h3.75c1.192 0 2 .75 2 1.75s-.808 1.75-2 1.75h-3.75v-3.5z" />
+              </svg>
+            </a>
+            <a href="https://twitter.com/pritommondal" target="_blank" class="social-icon-btn" aria-label="Twitter / X"
+              title="Twitter / X (@pritommondal)">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+              </svg>
+            </a>
+            <a href="mailto:pritommondal05@gmail.com" class="social-icon-btn" aria-label="Email"
+              title="Email (pritommondal05@gmail.com)">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z" />
+              </svg>
+            </a>
+            <a href="tel:+8801791634186" class="social-icon-btn" aria-label="Phone" title="Phone (+880 1791 634186)">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M20 15.5c-1.2 0-2.4-.2-3.6-.6-.4-.1-.8 0-1.1.3l-2.2 2.2c-2.8-1.4-5.1-3.8-6.6-6.6l2.2-2.2c.3-.3.4-.7.3-1.1-.4-1.2-.6-2.4-.6-3.6 0-.6-.5-1-1-1h-3.5c-.6 0-1 .5-1 1 0 9.4 7.6 17 17 17 .6 0 1-.5 1-1v-3.5c0-.5-.5-1-1-1z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Portrait Card -->
         <div class="portrait-card" id="portrait-trigger" style="cursor: pointer;" title="Click to enlarge portrait">
           <img src="pritom_portrait.webp" alt="Pritom Mondal Portrait" class="portrait-img">
-          <div class="portrait-meta">
-            <span class="status-indicator">
-              <span class="status-dot"></span> Available for Roles
-            </span>
-            <span>📍 Dhaka, Bangladesh</span>
-          </div>
         </div>
       </div>
     </section>
 
-    <!-- Selected Projects Section -->
+    <!-- 1. Education Section -->
+    <section class="section" id="education">
+      <div class="section-header">
+        <h2 class="section-title">Education</h2>
+      </div>
+
+      <table class="brutalist-table">
+        <tbody>
+          <tr>
+            <td class="table-label">University</td>
+            <td class="table-value">
+              <div class="institution-header-flex">
+                <div class="institution-logo-box" title="BRAC University Logo Upload Area">
+                  <!-- Replace src with your BRAC University logo image file -->
+                  <span class="institution-logo-placeholder">BRACU</span>
+                </div>
+                <div>
+                  <div class="project-header-row">
+                    <span class="project-name">BRAC University</span>
+                    <span class="pill pill-green">CGPA: 3.45 / 4.00</span>
+                  </div>
+                  <p style="margin-top: 4px; color: var(--text-secondary);">
+                    Bachelor of Science in Computer Science and Engineering (2022 – Present | Dhaka, Bangladesh)
+                  </p>
+                </div>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="table-label">College</td>
+            <td class="table-value">
+              <div class="institution-header-flex">
+                <div class="institution-logo-box" title="National Ideal College Logo Upload Area">
+                  <!-- Replace src with your College logo image file -->
+                  <span class="institution-logo-placeholder">NIC</span>
+                </div>
+                <div>
+                  <div class="project-header-row">
+                    <span class="project-name">National Ideal College</span>
+                    <span class="pill pill-yellow">GPA: 5.00 / 5.00</span>
+                  </div>
+                  <p style="margin-top: 4px; color: var(--text-secondary);">
+                    Higher Secondary Certificate (HSC Science | 2019 – 2021)
+                  </p>
+                </div>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="table-label">School</td>
+            <td class="table-value">
+              <div class="institution-header-flex">
+                <div class="institution-logo-box" title="Motijheel Government Boys' High School Logo Upload Area">
+                  <!-- Replace src with your School logo image file -->
+                  <span class="institution-logo-placeholder">MGBS</span>
+                </div>
+                <div>
+                  <div class="project-header-row">
+                    <span class="project-name">Motijheel Government Boys' High School</span>
+                    <span class="pill pill-pink">GPA: 5.00 / 5.00</span>
+                  </div>
+                  <p style="margin-top: 4px; color: var(--text-secondary);">
+                    Secondary School Certificate (SSC Science | 2009 – 2019)
+                  </p>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- 2. Professional Experience Section (Follows Education Immediately) -->
+    <section class="section" id="experience">
+      <div class="section-header">
+        <h2 class="section-title">Experience</h2>
+        <a href="experience.html" class="project-url-link" style="font-size: 13px;">View All ↗</a>
+      </div>
+
+      <div class="timeline-list">
+
+        <!-- Experience Item 01 -->
+        <div class="timeline-item">
+          <div class="timeline-grid">
+            <div class="timeline-year">Dec 2025 – June 2026</div>
+            <div>
+              <div class="institution-header-flex">
+                <div class="institution-logo-box" title="Graphland Logo Upload Area">
+                  <!-- Replace src with Graphland logo image file -->
+                  <span class="institution-logo-placeholder">GRAPHLAND</span>
+                </div>
+                <div>
+                  <div class="timeline-role">UI/UX Designer</div>
+                  <div class="timeline-org">Graphland (Remote)</div>
+                </div>
+              </div>
+              <p class="timeline-desc">• Designed easy-to-use interfaces by turning complex ideas into simple, clean
+                layouts.<br>• Collaborated closely with the development team to establish a consistent design style
+                across the platform.<br>• Improved user navigation speed and overall experience through clear, intuitive
+                interaction design.</p>
+            </div>
+            <div>
+              <span class="pill pill-blue">Design System</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience Item 02 -->
+        <div class="timeline-item">
+          <div class="timeline-grid">
+            <div class="timeline-year">May 2025 – Sep 2025</div>
+            <div>
+              <div class="institution-header-flex">
+                <div class="institution-logo-box" title="Octobrain Logo Upload Area">
+                  <!-- Replace src with Octobrain logo image file -->
+                  <span class="institution-logo-placeholder">OCTOBRAIN</span>
+                </div>
+                <div>
+                  <div class="timeline-role">Robotics and Programming Instructor</div>
+                  <div class="timeline-org">Octobrain (Dhaka, Bangladesh)</div>
+                </div>
+              </div>
+              <p class="timeline-desc">• Taught robotics and programming through hands-on STEM activities.<br>• Guided
+                students in building and coding small robotics projects.<br>• Created simple, engaging lesson plans
+                focused on problem-solving.<br>• Helped students debug code and understand basic hardware concepts.</p>
+            </div>
+            <div>
+              <span class="pill pill-pink">STEM Education</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience Item 03 -->
+        <div class="timeline-item">
+          <div class="timeline-grid">
+            <div class="timeline-year">Nov 2020 – Present</div>
+            <div>
+              <div class="institution-header-flex">
+                <div class="institution-logo-box" title="PGXR Studio Logo Upload Area">
+                  <!-- Replace src with PGXR logo image file -->
+                  <span class="institution-logo-placeholder">PGXR</span>
+                </div>
+                <div>
+                  <div class="timeline-role">Founder & Creative Director</div>
+                  <div class="timeline-org">PGXR Studio (Dhaka, Bangladesh)</div>
+                </div>
+              </div>
+              <p class="timeline-desc">• Provide freelance services in Graphic design, UI/UX design, motion graphics,
+                and event branding.<br>• Lead creative direction and develop visually engaging design solutions for
+                clients.<br>• Manage full project workflow across multiple design domains.<br>• Collaborate with clients
+                to deliver branding that aligns with goals.</p>
+            </div>
+            <div>
+              <span class="pill pill-green">Founder</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience Item 04 -->
+        <div class="timeline-item">
+          <div class="timeline-grid">
+            <div class="timeline-year">Nov 2020 – May 2022</div>
+            <div>
+              <div class="institution-header-flex">
+                <div class="institution-logo-box" title="Store To You Logo Upload Area">
+                  <!-- Replace src with Store To You logo image file -->
+                  <span class="institution-logo-placeholder">STORE TO YOU</span>
+                </div>
+                <div>
+                  <div class="timeline-role">Creative Lead</div>
+                  <div class="timeline-org">Store To You (Remote)</div>
+                </div>
+              </div>
+              <p class="timeline-desc">• Designed end-to-end product experiences for the Store To You e-commerce
+                platform.<br>• Created intuitive UI/UX flows to improve user journey, navigation, and conversion.<br>•
+                Led creative direction across branding, visuals, and overall product aesthetics.</p>
+            </div>
+            <div>
+              <span class="pill pill-purple">E-Commerce</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3. Extracurricular & Leadership Section -->
+    <section class="section" id="leadership">
+      <div class="section-header">
+        <h2 class="section-title">Extracurricular & Leadership</h2>
+      </div>
+
+      <div class="timeline-list">
+
+        <!-- Leadership Item 01 -->
+        <div class="timeline-item">
+          <div class="timeline-grid">
+            <div class="timeline-year">Dec 2024 – Feb 2026</div>
+            <div>
+              <div class="institution-header-flex">
+                <div class="institution-logo-box" title="BUCC Logo Upload Area">
+                  <!-- Replace src with BUCC logo image file -->
+                  <span class="institution-logo-placeholder">BUCC</span>
+                </div>
+                <div>
+                  <div class="timeline-role">Director of Creative</div>
+                  <div class="timeline-org">BRAC University Computer Club (BUCC)</div>
+                </div>
+              </div>
+              <p class="timeline-desc">• Lead creative direction for club events, tech workshops, and digital
+                campaigns.<br>• Supervise design and media teams to produce branding and promotional materials.</p>
+            </div>
+            <div>
+              <span class="pill pill-yellow">Leadership</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Leadership Item 02 -->
+        <div class="timeline-item">
+          <div class="timeline-grid">
+            <div class="timeline-year">May 2020 – Present</div>
+            <div>
+              <div class="institution-header-flex">
+                <div class="institution-logo-box" title="Sahitya Sandarsana Logo Upload Area">
+                  <!-- Replace src with Sahitya Sandarsana logo image file -->
+                  <span class="institution-logo-placeholder">SAHITYA</span>
+                </div>
+                <div>
+                  <div class="timeline-role">Co-Founder</div>
+                  <div class="timeline-org">Sahitya Sandarsana</div>
+                </div>
+              </div>
+              <p class="timeline-desc">• Co-founded a literary initiative to promote creative writing and cultural
+                engagement.<br>• Organized workshops, publications, and events for student writers.</p>
+            </div>
+            <div>
+              <span class="pill pill-orange">Literary</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. Skills & Capabilities Section -->
+    <section class="section" id="skills">
+      <div class="section-header">
+        <h2 class="section-title">Skills & Capabilities</h2>
+      </div>
+
+      <table class="brutalist-table">
+        <tbody>
+          <tr>
+            <td class="table-label">UI/UX & Design</td>
+            <td class="table-value">
+              <div class="pill-group" style="margin-bottom: 0;">
+                <span class="pill pill-blue">User Research</span>
+                <span class="pill pill-purple">Figma Prototyping</span>
+                <span class="pill pill-green">Wireframing</span>
+                <span class="pill pill-orange">Motion Graphics</span>
+                <span class="pill pill-yellow">Brand Strategy</span>
+                <span class="pill pill-pink">3D Spatial Design</span>
+                <span class="pill pill-default">WCAG 2.2 Accessibility</span>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="table-label">Engineering</td>
+            <td class="table-value">
+              <div class="pill-group" style="margin-bottom: 0;">
+                <span class="pill pill-green">React</span>
+                <span class="pill pill-blue">JavaScript (ES6+)</span>
+                <span class="pill pill-purple">Node.js & Express</span>
+                <span class="pill pill-orange">MongoDB</span>
+                <span class="pill pill-yellow">Three.js</span>
+                <span class="pill pill-pink">HTML5 & CSS3</span>
+                <span class="pill pill-default">Tailwind CSS</span>
+                <span class="pill pill-blue">Git & GitHub</span>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="table-label">Leadership</td>
+            <td class="table-value">
+              <div class="pill-group" style="margin-bottom: 0;">
+                <span class="pill pill-yellow">Creative Direction</span>
+                <span class="pill pill-pink">STEM & Robotics</span>
+                <span class="pill pill-blue">Team Management</span>
+                <span class="pill pill-green">Event Production</span>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- 5. Selected Projects Section -->
     <section class="section" id="projects">
       <div class="section-header">
-        <h2 class="section-title">Selected Projects</h2>
-        
+        <div style="display: flex; align-items: baseline; gap: 16px;">
+          <h2 class="section-title">Selected Projects</h2>
+          <a href="projects.html" class="project-url-link" style="font-size: 13px;">View All ↗</a>
+        </div>
+
         <!-- Category Filter Bar -->
         <div class="filter-bar">
           <button class="filter-btn active" data-filter="all">All</button>
-          <button class="filter-btn" data-filter="web">Web App</button>
-          <button class="filter-btn" data-filter="ux">UI/UX & Interaction</button>
-          <button class="filter-btn" data-filter="mern">MERN & Firebase</button>
-          <button class="filter-btn" data-filter="health">Healthcare UX</button>
+          <button class="filter-btn" data-filter="web">Web Development</button>
+          <button class="filter-btn" data-filter="spatial">3D & Spatial</button>
+          <button class="filter-btn" data-filter="healthcare">Healthcare & UX</button>
         </div>
       </div>
 
       <div class="project-list">
-        
+
         <!-- Project 001 -->
         <article class="project-item" data-category="web">
           <div class="project-number">001</div>
           <table class="brutalist-table">
             <tbody>
               <tr>
-                <td class="table-label">Project</td>
+                <td class="table-label">Title</td>
                 <td class="table-value">
                   <div class="project-header-row">
                     <span class="project-name">FundBridge</span>
-                    <span class="pill pill-blue">UI/UX</span>
-                    <span class="pill pill-green">Full-Stack Dev</span>
+                    <div class="pill-group">
+                      <span class="pill pill-blue">React</span>
+                      <span class="pill pill-green">Node.js</span>
+                      <span class="pill pill-purple">MongoDB</span>
+                      <span class="pill pill-orange">Crowdfunding</span>
+                    </div>
                   </div>
                 </td>
               </tr>
               <tr>
-                <td class="table-label">Year</td>
-                <td class="table-value">2026</td>
-              </tr>
-              <tr>
-                <td class="table-label">Stack / Tools</td>
-                <td class="table-value">React, Node.js, Express, MongoDB, Tailwind CSS, Figma</td>
-              </tr>
-              <tr>
                 <td class="table-label">http://</td>
                 <td class="table-value">
-                  <a href="https://pritommondal05.github.io" target="_blank" class="project-url-link">fundbridge.app ↗</a>
+                  <a href="https://pritommondal05.github.io" target="_blank" class="project-url-link">fundbridge.app
+                    ↗</a>
                 </td>
               </tr>
               <tr>
                 <td class="table-label">Overview</td>
                 <td class="table-value">
-                  A web-based crowdfunding & donation platform designed to connect social causes, startups, and individual initiatives with prospective backers transparently.
-                  <br>
+                  A web-based crowdfunding & donation platform designed to connect social causes, startups, and
+                  individual initiatives with prospective backers transparently.
+
+                  <!-- Landing Page Screenshot Upload Frame -->
+                  <div class="project-screenshot-frame"
+                    title="Click or replace with FundBridge landing page screenshot">
+                    <!-- Replace src with your screenshot image (e.g. fundbridge_ss.png) -->
+                    <div class="screenshot-placeholder-content">
+                      <svg class="screenshot-placeholder-icon" viewBox="0 0 24 24">
+                        <path
+                          d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zm-5.04-6.71l-2.75 3.54-1.96-2.36L6.5 17h11l-3.54-4.71z" />
+                      </svg>
+                      <span>Upload FundBridge Landing Page Screenshot</span>
+                    </div>
+                  </div>
+
                   <button class="details-toggle-btn" data-target="drawer-001">View Key Highlights ▼</button>
                   <div class="project-drawer" id="drawer-001">
                     <div class="drawer-content">
                       <ul>
-                        <li>Designed high-fidelity wireframes and user-centered UI/UX flows in Figma to simplify campaign creation pathways.</li>
-                        <li>Built interactive dashboards and real-time campaign progress trackers for donors and campaign managers.</li>
-                        <li>Ensured full responsive layout and WCAG AA accessibility compliance across mobile and desktop interfaces.</li>
+                        <li>Designed high-fidelity wireframes and user-centered UI/UX flows in Figma to simplify
+                          campaign creation pathways.</li>
+                        <li>Built interactive dashboards and real-time campaign progress trackers for donors and
+                          campaign managers.</li>
+                        <li>Ensured full responsive layout and WCAG AA accessibility compliance across mobile and
+                          desktop interfaces.</li>
                       </ul>
                     </div>
                   </div>
@@ -147,44 +504,56 @@
         </article>
 
         <!-- Project 002 -->
-        <article class="project-item" data-category="ux">
+        <article class="project-item" data-category="spatial">
           <div class="project-number">002</div>
           <table class="brutalist-table">
             <tbody>
               <tr>
-                <td class="table-label">Project</td>
+                <td class="table-label">Title</td>
                 <td class="table-value">
                   <div class="project-header-row">
-                    <span class="project-name">Bangladesh 3D Voting Simulator</span>
-                    <span class="pill pill-purple">3D Interaction</span>
-                    <span class="pill pill-yellow">HCI Research</span>
+                    <span class="project-name">Bangladesh 3D Electoral Voting Simulator</span>
+                    <div class="pill-group">
+                      <span class="pill pill-green">Top Finalist</span>
+                      <span class="pill pill-purple">Three.js</span>
+                      <span class="pill pill-yellow">3D Interaction</span>
+                      <span class="pill pill-orange">Civic Tech</span>
+                    </div>
                   </div>
                 </td>
               </tr>
               <tr>
-                <td class="table-label">Year</td>
-                <td class="table-value">2026</td>
-              </tr>
-              <tr>
-                <td class="table-label">Stack / Tools</td>
-                <td class="table-value">UI/UX Design, 3D Web Prototyping, Interaction Design</td>
-              </tr>
-              <tr>
                 <td class="table-label">http://</td>
                 <td class="table-value">
-                  <a href="https://pritommondal05.github.io" target="_blank" class="project-url-link">votingsimulator.bd ↗</a>
+                  <a href="https://pritommondal05.github.io" target="_blank" class="project-url-link">votingsimulator.bd
+                    ↗</a>
                 </td>
               </tr>
               <tr>
                 <td class="table-label">Overview</td>
                 <td class="table-value">
-                  An interactive 3D electoral simulation designed to make complex voting procedures and civic education engaging and easy to understand for citizens.
-                  <br>
+                  An interactive 3D electoral simulation designed to make complex voting procedures and civic education
+                  engaging and easy to understand for citizens.
+
+                  <!-- Landing Page Screenshot Upload Frame -->
+                  <div class="project-screenshot-frame"
+                    title="Click or replace with Voting Simulator landing page screenshot">
+                    <!-- Replace src with your screenshot image (e.g. voting_simulator_ss.png) -->
+                    <div class="screenshot-placeholder-content">
+                      <svg class="screenshot-placeholder-icon" viewBox="0 0 24 24">
+                        <path
+                          d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zm-5.04-6.71l-2.75 3.54-1.96-2.36L6.5 17h11l-3.54-4.71z" />
+                      </svg>
+                      <span>Upload 3D Electoral Voting Simulator Screenshot</span>
+                    </div>
+                  </div>
+
                   <button class="details-toggle-btn" data-target="drawer-002">View Key Highlights ▼</button>
                   <div class="project-drawer" id="drawer-002">
                     <div class="drawer-content">
                       <ul>
-                        <li>Simplified complex voting concepts into clear visual flows and intuitive 3D spatial interactions.</li>
+                        <li>Simplified complex voting concepts into clear visual flows and intuitive 3D spatial
+                          interactions.</li>
                         <li>Prioritized user-friendly layouts and accessible design for first-time voters.</li>
                         <li>Selected as Top Finalist at the Gen Vote Festival Hackathon 2025.</li>
                       </ul>
@@ -197,45 +566,54 @@
         </article>
 
         <!-- Project 003 -->
-        <article class="project-item" data-category="mern">
+        <article class="project-item" data-category="web">
           <div class="project-number">003</div>
           <table class="brutalist-table">
             <tbody>
               <tr>
-                <td class="table-label">Project</td>
+                <td class="table-label">Title</td>
                 <td class="table-value">
                   <div class="project-header-row">
                     <span class="project-name">AlamNet</span>
-                    <span class="pill pill-green">MERN Stack</span>
-                    <span class="pill pill-orange">Firebase</span>
+                    <div class="pill-group">
+                      <span class="pill pill-blue">React</span>
+                      <span class="pill pill-orange">Express.js</span>
+                      <span class="pill pill-green">MongoDB</span>
+                      <span class="pill pill-purple">Networking</span>
+                    </div>
                   </div>
                 </td>
               </tr>
               <tr>
-                <td class="table-label">Year</td>
-                <td class="table-value">2025</td>
-              </tr>
-              <tr>
-                <td class="table-label">Stack / Tools</td>
-                <td class="table-value">React, Node.js, Express, MongoDB, Firebase Auth, Figma</td>
-              </tr>
-              <tr>
                 <td class="table-label">http://</td>
                 <td class="table-value">
-                  <a href="https://pritommondal05.github.io" target="_blank" class="project-url-link">alamnet.dev ↗</a>
+                  <a href="https://pritommondal05.github.io" target="_blank" class="project-url-link">alamnet.io ↗</a>
                 </td>
               </tr>
               <tr>
                 <td class="table-label">Overview</td>
                 <td class="table-value">
-                  A personal networking and portfolio platform for showcasing skills, projects, and professional identity with real-time updates.
-                  <br>
+                  A personal networking and portfolio platform for showcasing skills, projects, and professional
+                  identity with real-time updates.
+
+                  <!-- Landing Page Screenshot Upload Frame -->
+                  <div class="project-screenshot-frame" title="Click or replace with AlamNet landing page screenshot">
+                    <!-- Replace src with your screenshot image (e.g. alamnet_ss.png) -->
+                    <div class="screenshot-placeholder-content">
+                      <svg class="screenshot-placeholder-icon" viewBox="0 0 24 24">
+                        <path
+                          d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zm-5.04-6.71l-2.75 3.54-1.96-2.36L6.5 17h11l-3.54-4.71z" />
+                      </svg>
+                      <span>Upload AlamNet Landing Page Screenshot</span>
+                    </div>
+                  </div>
+
                   <button class="details-toggle-btn" data-target="drawer-003">View Key Highlights ▼</button>
                   <div class="project-drawer" id="drawer-003">
                     <div class="drawer-content">
                       <ul>
-                        <li>Developed a modular and responsive user interface for interactive project showcases.</li>
-                        <li>Integrated Firebase real-time authentication and secure database syncing.</li>
+                        <li>Implemented dynamic project filtering and custom responsive UI cards.</li>
+                        <li>Integrated secure authentication and real-time backend API endpoints.</li>
                       </ul>
                     </div>
                   </div>
@@ -246,45 +624,58 @@
         </article>
 
         <!-- Project 004 -->
-        <article class="project-item" data-category="health">
+        <article class="project-item" data-category="healthcare">
           <div class="project-number">004</div>
           <table class="brutalist-table">
             <tbody>
               <tr>
-                <td class="table-label">Project</td>
+                <td class="table-label">Title</td>
                 <td class="table-value">
                   <div class="project-header-row">
                     <span class="project-name">ConnectCare</span>
-                    <span class="pill pill-pink">Healthcare UX</span>
-                    <span class="pill pill-blue">Product Design</span>
+                    <div class="pill-group">
+                      <span class="pill pill-pink">Healthcare UX</span>
+                      <span class="pill pill-blue">Figma</span>
+                      <span class="pill pill-green">Accessibility</span>
+                      <span class="pill pill-purple">System Design</span>
+                    </div>
                   </div>
                 </td>
               </tr>
               <tr>
-                <td class="table-label">Year</td>
-                <td class="table-value">2025</td>
-              </tr>
-              <tr>
-                <td class="table-label">Stack / Tools</td>
-                <td class="table-value">MERN Stack, Figma, Role-based Auth System</td>
-              </tr>
-              <tr>
                 <td class="table-label">http://</td>
                 <td class="table-value">
-                  <a href="https://pritommondal05.github.io" target="_blank" class="project-url-link">connectcare.health ↗</a>
+                  <a href="https://pritommondal05.github.io" target="_blank" class="project-url-link">connectcare.health
+                    ↗</a>
                 </td>
               </tr>
               <tr>
                 <td class="table-label">Overview</td>
                 <td class="table-value">
-                  A comprehensive doctor-patient management system for appointment scheduling, medical history tracking, and digital prescription access.
-                  <br>
+                  A comprehensive doctor-patient management system for appointment scheduling, medical history tracking,
+                  and digital prescription access.
+
+                  <!-- Landing Page Screenshot Upload Frame -->
+                  <div class="project-screenshot-frame"
+                    title="Click or replace with ConnectCare landing page screenshot">
+                    <!-- Replace src with your screenshot image (e.g. connectcare_ss.png) -->
+                    <div class="screenshot-placeholder-content">
+                      <svg class="screenshot-placeholder-icon" viewBox="0 0 24 24">
+                        <path
+                          d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zm-5.04-6.71l-2.75 3.54-1.96-2.36L6.5 17h11l-3.54-4.71z" />
+                      </svg>
+                      <span>Upload ConnectCare Landing Page Screenshot</span>
+                    </div>
+                  </div>
+
                   <button class="details-toggle-btn" data-target="drawer-004">View Key Highlights ▼</button>
                   <div class="project-drawer" id="drawer-004">
                     <div class="drawer-content">
                       <ul>
-                        <li>Designed intuitive UI/UX flows for medical history, prescriptions, and health reports.</li>
-                        <li>Implemented role-based dashboard views for doctors, administrative staff, and patients.</li>
+                        <li>Designed ergonomic, high-contrast interfaces for elder patient accessibility and quick
+                          physician consultation workflows.</li>
+                        <li>Mapped complete user journeys from booking appointments to reviewing diagnostic test
+                          results.</li>
                       </ul>
                     </div>
                   </div>
@@ -300,40 +691,53 @@
           <table class="brutalist-table">
             <tbody>
               <tr>
-                <td class="table-label">Project</td>
+                <td class="table-label">Title</td>
                 <td class="table-value">
                   <div class="project-header-row">
                     <span class="project-name">BRACU Eventverse</span>
-                    <span class="pill pill-yellow">Event System</span>
-                    <span class="pill pill-purple">PHP / MySQL</span>
+                    <div class="pill-group">
+                      <span class="pill pill-yellow">Campus Platform</span>
+                      <span class="pill pill-blue">Node.js</span>
+                      <span class="pill pill-purple">Event Tech</span>
+                      <span class="pill pill-orange">UI/UX</span>
+                    </div>
                   </div>
                 </td>
               </tr>
               <tr>
-                <td class="table-label">Year</td>
-                <td class="table-value">2025</td>
-              </tr>
-              <tr>
-                <td class="table-label">Stack / Tools</td>
-                <td class="table-value">HTML, CSS, JavaScript, PHP, MySQL, Figma</td>
-              </tr>
-              <tr>
                 <td class="table-label">http://</td>
                 <td class="table-value">
-                  <a href="https://pritommondal05.github.io" target="_blank" class="project-url-link">bracu-eventverse.edu ↗</a>
+                  <a href="https://pritommondal05.github.io" target="_blank"
+                    class="project-url-link">bracu-eventverse.edu ↗</a>
                 </td>
               </tr>
               <tr>
                 <td class="table-label">Overview</td>
                 <td class="table-value">
-                  An online event management and ticket booking platform built for BRAC University students and campus clubs.
-                  <br>
+                  An online event management and ticket booking platform built for BRAC University students and campus
+                  clubs.
+
+                  <!-- Landing Page Screenshot Upload Frame -->
+                  <div class="project-screenshot-frame"
+                    title="Click or replace with BRACU Eventverse landing page screenshot">
+                    <!-- Replace src with your screenshot image (e.g. eventverse_ss.png) -->
+                    <div class="screenshot-placeholder-content">
+                      <svg class="screenshot-placeholder-icon" viewBox="0 0 24 24">
+                        <path
+                          d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zm-5.04-6.71l-2.75 3.54-1.96-2.36L6.5 17h11l-3.54-4.71z" />
+                      </svg>
+                      <span>Upload BRACU Eventverse Landing Page Screenshot</span>
+                    </div>
+                  </div>
+
                   <button class="details-toggle-btn" data-target="drawer-005">View Key Highlights ▼</button>
                   <div class="project-drawer" id="drawer-005">
                     <div class="drawer-content">
                       <ul>
-                        <li>Created a clean dashboard to track upcoming campus events, budgets, and participant registrations.</li>
-                        <li>Applied user-centered research to analyze student workflow patterns and streamline event access.</li>
+                        <li>Created a clean dashboard to track upcoming campus events, budgets, and participant
+                          registrations.</li>
+                        <li>Applied user-centered research to analyze student workflow patterns and streamline event
+                          access.</li>
                       </ul>
                     </div>
                   </div>
@@ -346,95 +750,15 @@
       </div>
     </section>
 
-    <!-- Experience & Leadership Section -->
-    <section class="section" id="experience">
-      <div class="section-header">
-        <h2 class="section-title">Experience & Leadership</h2>
-      </div>
-
-      <div class="timeline-list">
-        
-        <div class="timeline-item">
-          <div class="timeline-grid">
-            <div class="timeline-year">Dec 2025 – Present</div>
-            <div>
-              <div class="timeline-role">UI/UX Designer</div>
-              <div class="timeline-org">Graphland (Remote)</div>
-              <p class="timeline-desc">Designing intuitive interfaces by transforming complex concepts into clean, accessible layouts. Collaborating closely with engineering teams to maintain cohesive design systems.</p>
-            </div>
-            <div>
-              <span class="pill pill-blue">Design System</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-grid">
-            <div class="timeline-year">May 2025 – Sep 2025</div>
-            <div>
-              <div class="timeline-role">Robotics & Programming Instructor</div>
-              <div class="timeline-org">Octobrain (Dhaka, Bangladesh)</div>
-              <p class="timeline-desc">Taught robotics and software engineering through hands-on STEM projects. Guided students through hardware debugging and algorithmic problem solving.</p>
-            </div>
-            <div>
-              <span class="pill pill-pink">Education</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-grid">
-            <div class="timeline-year">Nov 2020 – Present</div>
-            <div>
-              <div class="timeline-role">Founder & Creative Director</div>
-              <div class="timeline-org">PGXR Studio (Dhaka, Bangladesh)</div>
-              <p class="timeline-desc">Directing graphic design, UI/UX design, motion graphics, and event branding solutions. Managing full project lifecycles for multi-domain client initiatives.</p>
-            </div>
-            <div>
-              <span class="pill pill-green">Founder</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-grid">
-            <div class="timeline-year">Nov 2020 – May 2022</div>
-            <div>
-              <div class="timeline-role">Creative Lead</div>
-              <div class="timeline-org">Store To You (Remote)</div>
-              <p class="timeline-desc">Designed end-to-end e-commerce product user journeys, branding assets, and navigation flows to increase user conversion and satisfaction.</p>
-            </div>
-            <div>
-              <span class="pill pill-purple">E-Commerce</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-grid">
-            <div class="timeline-year">Dec 2024 – Feb 2026</div>
-            <div>
-              <div class="timeline-role">Director of Creative</div>
-              <div class="timeline-org">BRAC University Computer Club (BUCC)</div>
-              <p class="timeline-desc">Led creative direction and visual design strategy for flagship university tech conferences, hackathons, workshops, and digital media campaigns.</p>
-            </div>
-            <div>
-              <span class="pill pill-yellow">Leadership</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Services Accordion Section -->
+    <!-- 6. Services Accordion Section -->
     <section class="section" id="services">
       <div class="section-header">
         <h2 class="section-title">Services</h2>
+        <a href="services.html" class="project-url-link" style="font-size: 13px;">View All ↗</a>
       </div>
 
       <div class="services-list">
-        
+
         <div class="service-item">
           <div class="service-left">
             <span class="service-num">01</span>
@@ -443,97 +767,159 @@
           <span class="service-arrow">↓</span>
         </div>
         <div class="service-detail">
-          Conducting user interviews, usability testing, persona mapping, and high-fidelity wireframing to turn complex ideas into seamless visual interfaces.
+          Conducting user interviews, usability testing, persona mapping, and high-fidelity wireframing to turn complex
+          ideas into seamless visual interfaces.
         </div>
 
         <div class="service-item">
           <div class="service-left">
             <span class="service-num">02</span>
-            <span class="service-name">WEB DEVELOPMENT (FRONTEND & MERN)</span>
+            <span class="service-name">FULL-STACK WEB DEVELOPMENT</span>
           </div>
           <span class="service-arrow">↓</span>
         </div>
         <div class="service-detail">
-          Building fast, responsive, and accessible web applications using modern stacks like React, Node.js, Express, MongoDB, Tailwind CSS, and vanilla HTML5/CSS3.
+          Building fast, responsive, and accessible web applications using modern stacks like React, Node.js, Express,
+          MongoDB, Tailwind CSS, and vanilla HTML5/CSS3.
         </div>
 
         <div class="service-item">
           <div class="service-left">
             <span class="service-num">03</span>
-            <span class="service-name">BRAND STRATEGY & VISUAL IDENTITY</span>
+            <span class="service-name">BRAND IDENTITY & CREATIVE DIRECTION</span>
           </div>
           <span class="service-arrow">↓</span>
         </div>
         <div class="service-detail">
-          Crafting memorable logo designs, color systems, typography frameworks, and brand guidelines for startups, studios, and tech events.
+          Crafting memorable logo designs, color systems, typography frameworks, and brand guidelines for startups,
+          studios, and tech events.
         </div>
 
         <div class="service-item">
           <div class="service-left">
             <span class="service-num">04</span>
-            <span class="service-name">INTERACTIVE 3D & MOTION GRAPHICS</span>
+            <span class="service-name">3D MOTION & SPATIAL INTERACTION</span>
           </div>
           <span class="service-arrow">↓</span>
         </div>
         <div class="service-detail">
-          Creating fluid motion graphics, video promos, and interactive 3D web experiences using After Effects, Blender, and modern web graphics.
+          Creating fluid motion graphics, video promos, and interactive 3D web experiences using After Effects, Blender,
+          and modern web graphics.
         </div>
 
         <div class="service-item">
           <div class="service-left">
             <span class="service-num">05</span>
-            <span class="service-name">HUMAN-COMPUTER INTERACTION (HCI)</span>
+            <span class="service-name">HUMAN-COMPUTER INTERACTION (HCI) CONSULTING</span>
           </div>
           <span class="service-arrow">↓</span>
         </div>
         <div class="service-detail">
-          Applying ergonomic, accessible, and cognitive principles to digital interfaces, ensuring compliance with WCAG 2.2 AA standards.
+          Applying ergonomic, accessible, and cognitive principles to digital interfaces, ensuring compliance with WCAG
+          2.2 AA standards.
         </div>
 
       </div>
     </section>
 
-    <!-- Education & Recognitions Section -->
-    <section class="section" id="education">
+    <!-- 7. Recognitions & Awards Section -->
+    <section class="section" id="awards">
       <div class="section-header">
-        <h2 class="section-title">Education & Recognitions</h2>
+        <h2 class="section-title">Recognitions & Awards</h2>
       </div>
 
       <table class="brutalist-table">
         <tbody>
           <tr>
-            <td class="table-label">Education</td>
+            <td class="table-label">2026</td>
             <td class="table-value">
-              <strong>BRAC University</strong> — B.Sc. in Computer Science and Engineering (2022 – Present | CGPA: 3.41 / 4.00)<br>
-              <strong>National Ideal College</strong> — HSC Science (2019 – 2021 | GPA: 5.00 / 5.00)<br>
-              <strong>Motijheel Govt Boys' High School</strong> — SSC Science (2009 – 2019 | GPA: 5.00 / 5.00)
+              <div class="project-header-row">
+                <span class="project-name">Volunteer (Designer) — Cloud Native Days 2026</span>
+                <span class="pill pill-blue">Design Volunteer</span>
+              </div>
+              <p style="margin-top: 4px; color: var(--text-secondary);">
+                Contributed to visual branding, design systems, and digital promotional materials for Cloud Native Days.
+              </p>
             </td>
           </tr>
+
           <tr>
-            <td class="table-label">Recognitions</td>
+            <td class="table-label">2025</td>
             <td class="table-value">
-              • <strong>Lead Designer</strong> — Cloud Native Days Bangladesh (2026)<br>
-              • <strong>Top Finalist</strong> — Gen Vote Festival Hackathon (2025)<br>
-              • <strong>Lead Designer</strong> — Kubernetes Community Day Dhaka (2024)<br>
-              • <strong>Lead Designer</strong> — Kubernetes Community Day Chattogram (2024)<br>
-              • <strong>Galactic Local Volunteer</strong> — NASA Space Apps Challenge (2024)<br>
-              • <strong>Bronze Award</strong> — The Duke of Edinburgh's International Award (2023)<br>
-              • <strong>Short Filmmaking Award</strong> — Bangladesh Shilpakala Academy (2020)
+              <div class="project-header-row">
+                <span class="project-name">Top Finalist — Gen Vote Festival Hackathon 2025</span>
+                <span class="pill pill-green">Top Finalist</span>
+              </div>
+              <p style="margin-top: 4px; color: var(--text-secondary);">
+                Recognized for designing and building the Bangladesh 3D Electoral Voting Simulator.
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="table-label">2024 – 2026</td>
+            <td class="table-value">
+              <div class="project-header-row">
+                <span class="project-name">Design Volunteer — KCD Dhaka & KCD Chattogram</span>
+                <span class="pill pill-purple">Kubernetes Community</span>
+              </div>
+              <p style="margin-top: 4px; color: var(--text-secondary);">
+                Designed event branding, badges, social banners, and stage backdrops for Kubernetes Community Days.
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="table-label">2024</td>
+            <td class="table-value">
+              <div class="project-header-row">
+                <span class="project-name">Participant — NASA Space Apps Challenge 2024</span>
+                <span class="pill pill-yellow">Global Hackathon</span>
+              </div>
+              <p style="margin-top: 4px; color: var(--text-secondary);">
+                Collaborated on space data visualization and interactive UI design solutions for NASA challenges.
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="table-label">2020</td>
+            <td class="table-value">
+              <div class="project-header-row">
+                <span class="project-name">Bronze Award — The Duke of Edinburgh's International Award</span>
+                <span class="pill pill-orange">International Honor</span>
+              </div>
+              <p style="margin-top: 4px; color: var(--text-secondary);">
+                Earned for community service, skill development, physical recreation, and adventurous journey.
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="table-label">2018</td>
+            <td class="table-value">
+              <div class="project-header-row">
+                <span class="project-name">Certificate of Excellence — Bangladesh Shilpakala Academy</span>
+                <span class="pill pill-pink">Cultural Excellence</span>
+              </div>
+              <p style="margin-top: 4px; color: var(--text-secondary);">
+                Awarded for creative film direction and cultural arts contribution.
+              </p>
             </td>
           </tr>
         </tbody>
       </table>
     </section>
 
-    <!-- Footer / Contact Section -->
+    <!-- 8. Footer / Contact Section -->
     <footer class="footer" id="contact">
       <h2 class="footer-headline">LET'S TALK</h2>
-      
+
       <div class="pill-group">
         <a href="mailto:pritommondal05@gmail.com" class="pill pill-yellow">pritommondal05@gmail.com ↗</a>
-        <a href="https://github.com/pritommondal05" target="_blank" class="pill pill-default">GitHub ↗</a>
-        <a href="https://linkedin.com" target="_blank" class="pill pill-default">LinkedIn ↗</a>
-        <a href="https://behance.net" target="_blank" class="pill pill-default">Behance ↗</a>
+        <a href="https://github.com/pritommondal" target="_blank" class="pill pill-default">GitHub ↗</a>
+        <a href="https://linkedin.com/in/pritommondal05" target="_blank" class="pill pill-default">LinkedIn ↗</a>
+        <a href="https://behance.net/pritommondal" target="_blank" class="pill pill-default">Behance ↗</a>
       </div>
 
       <div class="footer-bottom">
@@ -544,7 +930,119 @@
 
   </main>
 
-  <!-- Scroll To Top Button (Joshua Kaplan Exact Circular Button) -->
+  <!-- Floating Dock Pill Navigation Bar (Fixed at Bottom Center, Animated on Scroll) -->
+  <header class="navbar-wrapper">
+    <nav class="navbar">
+      <!-- Home Icon -->
+      <a href="index.html#about" class="nav-icon-link active" aria-label="Home" title="Home">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+          <polyline points="9 22 9 12 15 12 15 22" />
+        </svg>
+      </a>
+
+      <!-- Icon-Only Nav Bar Links (Outline SVGs) -->
+      <ul class="nav-links" id="nav-links" style="display: flex; gap: 4px;">
+        <li>
+          <a href="experience.html" class="nav-icon-link" aria-label="Experience" title="Experience">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"
+              stroke-linejoin="round">
+              <rect width="20" height="14" x="2" y="7" rx="2" ry="2" />
+              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="projects.html" class="nav-icon-link" aria-label="Projects" title="Projects">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"
+              stroke-linejoin="round">
+              <rect width="7" height="7" x="3" y="3" rx="1" />
+              <rect width="7" height="7" x="14" y="3" rx="1" />
+              <rect width="7" height="7" x="14" y="14" rx="1" />
+              <rect width="7" height="7" x="3" y="14" rx="1" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="services.html" class="nav-icon-link" aria-label="Services" title="Services">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path
+                d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="contact.html" class="nav-icon-link" aria-label="Contact" title="Contact">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"
+              stroke-linejoin="round">
+              <rect width="20" height="16" x="2" y="4" rx="2" />
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+
+      <div style="display: flex; align-items: center; gap: 4px;">
+        <!-- Display & Accessibility Controls Icon Button -->
+        <button class="nav-icon-btn" id="a11y-toggle-btn" aria-label="Display & Accessibility Controls"
+          title="Display & Accessibility Controls">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"
+            stroke-linejoin="round">
+            <line x1="4" x2="4" y1="21" y2="14" />
+            <line x1="4" x2="4" y1="10" y2="3" />
+            <line x1="12" x2="12" y1="21" y2="12" />
+            <line x1="12" x2="12" y1="8" y2="3" />
+            <line x1="20" x2="20" y1="21" y2="16" />
+            <line x1="1" x2="7" y1="14" y2="14" />
+            <line x1="9" x2="15" y1="8" y2="8" />
+            <line x1="17" x2="23" y1="16" y2="16" />
+          </svg>
+        </button>
+
+        <!-- Dark/Light Theme Toggle Icon Button -->
+        <button class="nav-icon-btn" id="theme-toggle" aria-label="Toggle Theme" title="Toggle Light / Dark Mode">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Accessibility & Display Controls Popover Card -->
+  <div class="a11y-popover" id="a11y-popover">
+    <div class="a11y-header">
+      <span>Display & Accessibility</span>
+      <button class="a11y-close-btn" id="a11y-close">✕</button>
+    </div>
+
+    <!-- Font Size Options -->
+    <div class="a11y-group">
+      <label class="a11y-label">Text Size</label>
+      <div class="a11y-btn-trio">
+        <button class="a11y-btn active" data-size="default">Default</button>
+        <button class="a11y-btn" data-size="large">Large</button>
+        <button class="a11y-btn" data-size="xlarge">Extra Large</button>
+      </div>
+    </div>
+
+    <!-- Underline Headings Toggle -->
+    <div class="a11y-group a11y-row-toggle">
+      <label class="a11y-label" for="underline-toggle">Underline Headings</label>
+      <input type="checkbox" id="underline-toggle" class="a11y-checkbox">
+    </div>
+
+    <!-- High Contrast Toggle -->
+    <div class="a11y-group a11y-row-toggle">
+      <label class="a11y-label" for="highcontrast-toggle">High Contrast Mode</label>
+      <input type="checkbox" id="highcontrast-toggle" class="a11y-checkbox">
+    </div>
+  </div>
+
+  <!-- Scroll To Top Button -->
   <button class="scroll-top-btn" id="scroll-top-btn" aria-label="Scroll back to top">↑</button>
 
   <!-- Image Preview Modal -->
@@ -559,4 +1057,5 @@
 
   <script src="app.js"></script>
 </body>
+
 </html>
