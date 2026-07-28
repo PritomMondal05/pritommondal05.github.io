@@ -1,0 +1,201 @@
+Pritom Mondal
+
+Location: Dhaka, Bangladesh
+
+Phone: +880 1791 634186
+
+Email: pritommondal05@gmail.com
+
+Website: pritommondal05.github.io
+
+Links: GitHub | LinkedIn | Behance
+
+OBJECTIVE
+
+Passionate about Human-Computer Interaction (HCI) and digital design, with expertise in UI/UX, web development, and multimedia. Committed to creating user-centered, accessible, and innovative solutions that enhance digital experiences. Eager to leverage my technical skills and creative vision to build impactful, inclusive technologies and collaborate with teams on projects that bridge design, development, and human-centered research.
+
+EDUCATION
+
+BRAC University — Dhaka, Bangladesh
+
+2022 – Present
+
+Degree: Bachelor of Science in Computer Science and Engineering
+
+CGPA: 3.41 / 4.00
+
+National Ideal College — Dhaka, Bangladesh
+
+2019 – 2021
+
+Higher Secondary Certificate (HSC)
+
+GPA: 5.00 / 5.00
+
+Motijheel Government Boys' High School — Dhaka, Bangladesh
+
+2009 – 2019
+
+Secondary School Certificate (SSC)
+
+GPA: 5.00 / 5.00
+
+EXPERIENCE
+
+Graphland — UI/UX Designer
+
+December 2025 – Present | Remote
+
+Designed easy-to-use interfaces by turning complex ideas into simple, clean layouts.
+
+Collaborated closely with the development team to establish a consistent design style across the platform.
+
+Improved user navigation speed and overall experience through clear, intuitive interaction design.
+
+Octobrain — Robotics and Programming Instructor
+
+May 2025 – September 2025 | Dhaka, Bangladesh
+
+Taught robotics and programming through hands-on STEM activities.
+
+Guided students in building and coding small robotics projects.
+
+Created simple, engaging lesson plans focused on problem-solving.
+
+Helped students debug code and understand basic hardware concepts.
+
+PGXR — Founder
+
+November 2020 – Present | Dhaka, Bangladesh
+
+Provide freelance services in Graphic design, UI/UX design, motion graphics, and event branding.
+
+Lead creative direction and develop visually engaging design solutions for clients.
+
+Manage full project workflow—from concept to final delivery—across multiple design domains.
+
+Collaborate with clients to understand needs and deliver branding that aligns with their goals.
+
+Store To You — Creative Lead
+
+November 2020 – May 2022 | Remote
+
+Designed end-to-end product experiences for the Store To You e-commerce platform.
+
+Created intuitive UI/UX flows to improve user journey, navigation, and conversion.
+
+Led creative direction across branding, visuals, and overall product aesthetics.
+
+Collaborated with developers and business teams to translate ideas into usable product features.
+
+PROJECTS
+
+FundBridge
+
+February 2026
+
+Tools: React, Node.js, Express, MongoDB, Tailwind CSS, Figma
+
+A web-based crowdfunding and donation platform designed to connect social causes, startups, and individual initiatives with prospective backers.
+
+Designed high-fidelity wireframes and user-centered UI/UX flows in Figma to simplify campaign creation and contribution pathways.
+
+Built interactive dashboards and campaign progress trackers to facilitate transparent fund management and real-time updates.
+
+Bangladesh 3D Voting Simulator
+
+January 2026
+
+Tools: UI/UX Design, Interaction Design, Web Prototyping
+
+Designed an interactive 3D voting simulation experience to make electoral processes easier to understand.
+
+Simplified complex voting concepts into clear visual flows and intuitive user interactions.
+
+Improved accessibility and engagement by prioritizing straightforward navigation and user-friendly layouts.
+
+AlamNet
+
+December 2025
+
+Tools: MERN Stack (React, Node.js, Express, MongoDB), Firebase, Figma
+
+A personal networking and portfolio platform for showcasing skills, projects, and professional identity.
+
+Developed a responsive and modular UI for skills, achievements, and project sections.
+
+Implemented Firebase authentication and real-time content updates for a smooth user experience.
+
+ConnectCare
+
+August 2025
+
+Tools: MERN Stack (React, Node.js, Express, MongoDB), Figma
+
+A doctor-patient management system for appointment scheduling, health records, and treatment tracking.
+
+Designed intuitive UI/UX flows for medical history, prescriptions, and reports.
+
+Implemented secure login and role-based access for doctors and patients.
+
+BRACU Eventverse
+
+April 2025
+
+Tools: HTML, CSS, JavaScript, PHP, MySQL
+
+An online event management platform for BRAC University students enabling event creation, booking, club management, and audience engagement.
+
+Developed a full event booking and management system for clubs and students.
+
+Created a clean UI dashboard to track events, budgets, and participants.
+
+Applied user-centered design to analyze workflow patterns and improve usability.
+
+SKILLS
+
+Programming Languages: C, Java, Python, JavaScript
+
+Web Technologies: HTML, CSS, Bootstrap, React, Node.js, Flutter
+
+Database Systems: MySQL, MongoDB, Firebase, Supabase
+
+Specialized Areas: UI/UX Design, Motion Graphics, Event Branding, Robotics
+
+Other Tools & Technologies: Figma, Photoshop, Illustrator, After Effects, Premiere Pro, Blender, Lightroom, Canva
+
+Research Skills: Problem Analysis, Data Collection, Technical Writing, Literature Review, Experimentation, Statistical Analysis
+
+LEADERSHIP AND VOLUNTEER EXPERIENCE
+
+BRAC University Computer Club (BUCC) — Director of Creative
+
+December 2024 – February 2026
+
+Lead creative direction for club events, workshops, and digital campaigns.
+
+Supervise design and media teams to produce branding and promotional materials.
+
+Sahitya Sandarsana — Co-Founder
+
+May 2020 – Present
+
+Co-founded a literary initiative to promote writing and cultural engagement.
+
+Organized workshops, publications, and events for student writers.
+
+CERTIFICATIONS AND RECOGNITIONS
+
+Lead Designer | Cloud Native Days Bangladesh (2026)
+
+Top Finalist | Gen Vote Festival Hackathon (2025)
+
+Lead Designer | Kubernetes Community Day Dhaka (2024)
+
+Lead Designer | Kubernetes Community Day Chattogram (2024)
+
+Galactic Local Volunteer | NASA Space Apps Challenge (2024)
+
+Bronze Standard | The Duke of Edinburgh's International Award (2023)
+
+Awarded for Short Filmmaking | Bangladesh Shilpakala Academy (2020)

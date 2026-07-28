@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pritom Mondal © 2026 — UI/UX Designer & Developer</title>
+  <meta name="description" content="Portfolio of Pritom Mondal — UI/UX Designer, Web Developer, and HCI Researcher based in Dhaka, Bangladesh. Founder of PGXR.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="pm navicon.png" type="image/png">
+</head>
+<body>
+
+  <!-- Sticky Navigation Bar -->
+  <header class="navbar-wrapper">
+    <nav class="navbar">
+      <a href="#" class="brand-logo" aria-label="Pritom Mondal Homepage">
+        <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 299.15">
+          <g>
+            <path d="M104.97,59.45c23.02,0,41.29,8.08,54.8,24.24,13.28,16.16,19.93,37.97,19.93,65.42s-6.64,49.26-19.93,65.42c-13.51,16.16-31.77,24.24-54.8,24.24s-38.75-8.3-50.48-24.91v86.01H2.69V63.43h50.48v22.91c11.73-17.93,29-26.9,51.81-26.9ZM90.69,197.26c11.51,0,20.48-4.26,26.9-12.78,6.42-8.52,9.63-20.76,9.63-36.7,0-31.22-12.18-46.83-36.53-46.83s-36.86,16.05-36.86,48.15,12.29,48.15,36.86,48.15Z"/>
+            <path d="M301.9,60.77c.88,0,4.65.22,11.29.66v47.16h-13.28c-30.33,0-45.5,15.5-45.5,46.49v79.7h-51.81V63.43h50.48v31.88c7.97-23.02,24.24-34.54,48.82-34.54Z"/>
+            <path d="M385.92,234.79h-51.81V63.43h51.81v171.36ZM384.93,43.84h-49.48V0h49.48v43.84Z"/>
+            <path d="M515.11,63.43v37.86h-32.88v80.03c0,5.76,1.44,9.69,4.32,11.79,2.87,2.11,7.97,3.16,15.28,3.16h13.28v38.52c-6.2.88-14.17,1.33-23.91,1.33-21.48,0-36.98-3.82-46.49-11.46-9.52-7.64-14.28-20.2-14.28-37.69v-85.68h-25.57v-37.86h25.57V12.62h51.81v50.81h32.88Z"/>
+            <path d="M616.73,238.78c-27.23,0-49.04-8.19-65.42-24.57-16.39-16.38-24.57-38.08-24.57-65.09s8.19-49.04,24.57-65.42c16.16-16.16,37.97-24.24,65.42-24.24s49.26,8.08,65.42,24.24c16.16,16.16,24.24,37.97,24.24,65.42s-8.08,48.93-24.24,65.09c-16.38,16.39-38.19,24.57-65.42,24.57ZM616.73,197.26c11.96,0,21.14-4.09,27.56-12.29,6.42-8.19,9.63-20.14,9.63-35.87s-3.21-27.67-9.63-35.87c-6.42-8.19-15.61-12.29-27.56-12.29s-21.48,4.1-27.9,12.29c-6.42,8.19-9.63,20.15-9.63,35.87s3.21,27.68,9.63,35.87c6.42,8.19,15.72,12.29,27.9,12.29Z"/>
+            <path d="M935.21,59.45c18.82,0,33.54,5.59,44.17,16.77,10.63,11.18,15.94,26.96,15.94,47.32v111.25h-51.81v-102.29c0-19.26-8.53-28.89-25.57-28.89-9.08,0-16.27,3.1-21.59,9.3-5.31,6.2-7.97,15.28-7.97,27.23v94.65h-51.81v-102.29c0-19.26-8.52-28.89-25.57-28.89-9.08,0-16.33,3.1-21.75,9.3-5.43,6.2-8.14,15.28-8.14,27.23v94.65h-51.81V63.43h50.48v24.24c12.62-18.82,28.89-28.23,48.82-28.23,25.68,0,43.39,10.29,53.13,30.88,13.95-20.59,31.77-30.88,53.47-30.88Z"/>
+            <path fill="#f83823" d="M1080,234.79h-58.45v-57.12h58.45v57.12Z"/>
+          </g>
+        </svg>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div style="display: flex; align-items: center; gap: 8px;">
+        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle light and dark mode">
+          <span>☾</span><span>Dark Mode</span>
+        </button>
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle mobile menu">☰ Menu</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    
+    <!-- Hero Section (Joshua Kaplan Style Header) -->
+    <section class="hero-section" id="about">
+      <h1 class="hero-title">Pritom Mondal © 2026</h1>
+
+      <!-- Color Pill Badges (Exact Joshua Kaplan Visual Reference) -->
+      <div class="pill-group">
+        <a href="https://twitter.com" target="_blank" class="pill pill-yellow">Twitter ↗</a>
+        <a href="mailto:pritommondal05@gmail.com" class="pill pill-yellow">Email ↗</a>
+        <span class="pill pill-blue">UI/UX Designer</span>
+        <span class="pill pill-green">Co-Founder @ PGXR</span>
+        <span class="pill pill-purple">Web Development</span>
+        <span class="pill pill-orange">HCI Research</span>
+        <span class="pill pill-pink">Robotics Instructor</span>
+      </div>
+
+      <!-- Bio & Portrait Banner Grid -->
+      <div class="hero-content-grid">
+        <p class="bio-text">
+          <strong>Pritom Mondal</strong> is a UI/UX designer, developer, and HCI researcher based in <strong>Dhaka, Bangladesh</strong> specializing in user-centered digital products, web development, motion graphics, and interactive simulations. He studied Computer Science & Engineering at <strong>BRAC University</strong> (CGPA 3.41/4.00) and leads creative direction at <strong>PGXR</strong> studio. He is passionate about crafting intuitive, accessible, and high-impact digital experiences.
+        </p>
+
+        <div class="portrait-card" id="portrait-trigger" style="cursor: pointer;" title="Click to enlarge portrait">
+          <img src="pritom_portrait.webp" alt="Pritom Mondal Portrait" class="portrait-img">
+          <div class="portrait-meta">
+            <span class="status-indicator">
+              <span class="status-dot"></span> Available for Roles
+            </span>
+            <span>📍 Dhaka, Bangladesh</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Selected Projects Section -->
+    <section class="section" id="projects">
+      <div class="section-header">
+        <h2 class="section-title">Selected Projects</h2>
+        
+        <!-- Category Filter Bar -->
+        <div class="filter-bar">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web App</button>
+          <button class="filter-btn" data-filter="ux">UI/UX & Interaction</button>
+          <button class="filter-btn" data-filter="mern">MERN & Firebase</button>
+          <button class="filter-btn" data-filter="health">Healthcare UX</button>
+        </div>
+      </div>
+
+      <div class="project-list">
+        
+        <!-- Project 001 -->
+        <article class="project-item" data-category="web">
+          <div class="project-number">001</div>
+          <table class="brutalist-table">
+            <tbody>
+              <tr>
+                <td class="table-label">Project</td>
+                <td class="table-value">
+                  <div class="project-header-row">
+                    <span class="project-name">FundBridge</span>
+                    <span class="pill pill-blue">UI/UX</span>
+                    <span class="pill pill-green">Full-Stack Dev</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="table-label">Year</td>
+                <td class="table-value">2026</td>
+              </tr>
+              <tr>
+                <td class="table-label">Stack / Tools</td>
+                <td class="table-value">React, Node.js, Express, MongoDB, Tailwind CSS, Figma</td>
+              </tr>
+              <tr>
+                <td class="table-label">http://</td>
+                <td class="table-value">
+                  <a href="https://pritommondal05.github.io" target="_blank" class="project-url-link">fundbridge.app ↗</a>
+                </td>
+              </tr>
+              <tr>
+                <td class="table-label">Overview</td>
+                <td class="table-value">
+                  A web-based crowdfunding & donation platform designed to connect social causes, startups, and individual initiatives with prospective backers transparently.
+                  <br>
+                  <button class="details-toggle-btn" data-target="drawer-001">View Key Highlights ▼</button>
+                  <div class="project-drawer" id="drawer-001">
+                    <div class="drawer-content">
+                      <ul>
+                        <li>Designed high-fidelity wireframes and user-centered UI/UX flows in Figma to simplify campaign creation pathways.</li>
+                        <li>Built interactive dashboards and real-time campaign progress trackers for donors and campaign managers.</li>
+                        <li>Ensured full responsive layout and WCAG AA accessibility compliance across mobile and desktop interfaces.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+
+        <!-- Project 002 -->
+        <article class="project-item" data-category="ux">
+          <div class="project-number">002</div>
+          <table class="brutalist-table">
+            <tbody>
+              <tr>
+                <td class="table-label">Project</td>
+                <td class="table-value">
+                  <div class="project-header-row">
+                    <span class="project-name">Bangladesh 3D Voting Simulator</span>
+                    <span class="pill pill-purple">3D Interaction</span>
+                    <span class="pill pill-yellow">HCI Research</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="table-label">Year</td>
+                <td class="table-value">2026</td>
+              </tr>
+              <tr>
+                <td class="table-label">Stack / Tools</td>
+                <td class="table-value">UI/UX Design, 3D Web Prototyping, Interaction Design</td>
+              </tr>
+              <tr>
+                <td class="table-label">http://</td>
+                <td class="table-value">
+                  <a href="https://pritommondal05.github.io" target="_blank" class="project-url-link">votingsimulator.bd ↗</a>
+                </td>
+              </tr>
+              <tr>
+                <td class="table-label">Overview</td>
+                <td class="table-value">
+                  An interactive 3D electoral simulation designed to make complex voting procedures and civic education engaging and easy to understand for citizens.
+                  <br>
+                  <button class="details-toggle-btn" data-target="drawer-002">View Key Highlights ▼</button>
+                  <div class="project-drawer" id="drawer-002">
+                    <div class="drawer-content">
+                      <ul>
+                        <li>Simplified complex voting concepts into clear visual flows and intuitive 3D spatial interactions.</li>
+                        <li>Prioritized user-friendly layouts and accessible design for first-time voters.</li>
+                        <li>Selected as Top Finalist at the Gen Vote Festival Hackathon 2025.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+
+        <!-- Project 003 -->
+        <article class="project-item" data-category="mern">
+          <div class="project-number">003</div>
+          <table class="brutalist-table">
+            <tbody>
+              <tr>
+                <td class="table-label">Project</td>
+                <td class="table-value">
+                  <div class="project-header-row">
+                    <span class="project-name">AlamNet</span>
+                    <span class="pill pill-green">MERN Stack</span>
+                    <span class="pill pill-orange">Firebase</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="table-label">Year</td>
+                <td class="table-value">2025</td>
+              </tr>
+              <tr>
+                <td class="table-label">Stack / Tools</td>
+                <td class="table-value">React, Node.js, Express, MongoDB, Firebase Auth, Figma</td>
+              </tr>
+              <tr>
+                <td class="table-label">http://</td>
+                <td class="table-value">
+                  <a href="https://pritommondal05.github.io" target="_blank" class="project-url-link">alamnet.dev ↗</a>
+                </td>
+              </tr>
+              <tr>
+                <td class="table-label">Overview</td>
+                <td class="table-value">
+                  A personal networking and portfolio platform for showcasing skills, projects, and professional identity with real-time updates.
+                  <br>
+                  <button class="details-toggle-btn" data-target="drawer-003">View Key Highlights ▼</button>
+                  <div class="project-drawer" id="drawer-003">
+                    <div class="drawer-content">
+                      <ul>
+                        <li>Developed a modular and responsive user interface for interactive project showcases.</li>
+                        <li>Integrated Firebase real-time authentication and secure database syncing.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+
+        <!-- Project 004 -->
+        <article class="project-item" data-category="health">
+          <div class="project-number">004</div>
+          <table class="brutalist-table">
+            <tbody>
+              <tr>
+                <td class="table-label">Project</td>
+                <td class="table-value">
+                  <div class="project-header-row">
+                    <span class="project-name">ConnectCare</span>
+                    <span class="pill pill-pink">Healthcare UX</span>
+                    <span class="pill pill-blue">Product Design</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="table-label">Year</td>
+                <td class="table-value">2025</td>
+              </tr>
+              <tr>
+                <td class="table-label">Stack / Tools</td>
+                <td class="table-value">MERN Stack, Figma, Role-based Auth System</td>
+              </tr>
+              <tr>
+                <td class="table-label">http://</td>
+                <td class="table-value">
+                  <a href="https://pritommondal05.github.io" target="_blank" class="project-url-link">connectcare.health ↗</a>
+                </td>
+              </tr>
+              <tr>
+                <td class="table-label">Overview</td>
+                <td class="table-value">
+                  A comprehensive doctor-patient management system for appointment scheduling, medical history tracking, and digital prescription access.
+                  <br>
+                  <button class="details-toggle-btn" data-target="drawer-004">View Key Highlights ▼</button>
+                  <div class="project-drawer" id="drawer-004">
+                    <div class="drawer-content">
+                      <ul>
+                        <li>Designed intuitive UI/UX flows for medical history, prescriptions, and health reports.</li>
+                        <li>Implemented role-based dashboard views for doctors, administrative staff, and patients.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+
+        <!-- Project 005 -->
+        <article class="project-item" data-category="web">
+          <div class="project-number">005</div>
+          <table class="brutalist-table">
+            <tbody>
+              <tr>
+                <td class="table-label">Project</td>
+                <td class="table-value">
+                  <div class="project-header-row">
+                    <span class="project-name">BRACU Eventverse</span>
+                    <span class="pill pill-yellow">Event System</span>
+                    <span class="pill pill-purple">PHP / MySQL</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="table-label">Year</td>
+                <td class="table-value">2025</td>
+              </tr>
+              <tr>
+                <td class="table-label">Stack / Tools</td>
+                <td class="table-value">HTML, CSS, JavaScript, PHP, MySQL, Figma</td>
+              </tr>
+              <tr>
+                <td class="table-label">http://</td>
+                <td class="table-value">
+                  <a href="https://pritommondal05.github.io" target="_blank" class="project-url-link">bracu-eventverse.edu ↗</a>
+                </td>
+              </tr>
+              <tr>
+                <td class="table-label">Overview</td>
+                <td class="table-value">
+                  An online event management and ticket booking platform built for BRAC University students and campus clubs.
+                  <br>
+                  <button class="details-toggle-btn" data-target="drawer-005">View Key Highlights ▼</button>
+                  <div class="project-drawer" id="drawer-005">
+                    <div class="drawer-content">
+                      <ul>
+                        <li>Created a clean dashboard to track upcoming campus events, budgets, and participant registrations.</li>
+                        <li>Applied user-centered research to analyze student workflow patterns and streamline event access.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Experience & Leadership Section -->
+    <section class="section" id="experience">
+      <div class="section-header">
+        <h2 class="section-title">Experience & Leadership</h2>
+      </div>
+
+      <div class="timeline-list">
+        
+        <div class="timeline-item">
+          <div class="timeline-grid">
+            <div class="timeline-year">Dec 2025 – Present</div>
+            <div>
+              <div class="timeline-role">UI/UX Designer</div>
+              <div class="timeline-org">Graphland (Remote)</div>
+              <p class="timeline-desc">Designing intuitive interfaces by transforming complex concepts into clean, accessible layouts. Collaborating closely with engineering teams to maintain cohesive design systems.</p>
+            </div>
+            <div>
+              <span class="pill pill-blue">Design System</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-grid">
+            <div class="timeline-year">May 2025 – Sep 2025</div>
+            <div>
+              <div class="timeline-role">Robotics & Programming Instructor</div>
+              <div class="timeline-org">Octobrain (Dhaka, Bangladesh)</div>
+              <p class="timeline-desc">Taught robotics and software engineering through hands-on STEM projects. Guided students through hardware debugging and algorithmic problem solving.</p>
+            </div>
+            <div>
+              <span class="pill pill-pink">Education</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-grid">
+            <div class="timeline-year">Nov 2020 – Present</div>
+            <div>
+              <div class="timeline-role">Founder & Creative Director</div>
+              <div class="timeline-org">PGXR Studio (Dhaka, Bangladesh)</div>
+              <p class="timeline-desc">Directing graphic design, UI/UX design, motion graphics, and event branding solutions. Managing full project lifecycles for multi-domain client initiatives.</p>
+            </div>
+            <div>
+              <span class="pill pill-green">Founder</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-grid">
+            <div class="timeline-year">Nov 2020 – May 2022</div>
+            <div>
+              <div class="timeline-role">Creative Lead</div>
+              <div class="timeline-org">Store To You (Remote)</div>
+              <p class="timeline-desc">Designed end-to-end e-commerce product user journeys, branding assets, and navigation flows to increase user conversion and satisfaction.</p>
+            </div>
+            <div>
+              <span class="pill pill-purple">E-Commerce</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-grid">
+            <div class="timeline-year">Dec 2024 – Feb 2026</div>
+            <div>
+              <div class="timeline-role">Director of Creative</div>
+              <div class="timeline-org">BRAC University Computer Club (BUCC)</div>
+              <p class="timeline-desc">Led creative direction and visual design strategy for flagship university tech conferences, hackathons, workshops, and digital media campaigns.</p>
+            </div>
+            <div>
+              <span class="pill pill-yellow">Leadership</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Services Accordion Section -->
+    <section class="section" id="services">
+      <div class="section-header">
+        <h2 class="section-title">Services</h2>
+      </div>
+
+      <div class="services-list">
+        
+        <div class="service-item">
+          <div class="service-left">
+            <span class="service-num">01</span>
+            <span class="service-name">UI/UX RESEARCH & WIREFRAMING</span>
+          </div>
+          <span class="service-arrow">↓</span>
+        </div>
+        <div class="service-detail">
+          Conducting user interviews, usability testing, persona mapping, and high-fidelity wireframing to turn complex ideas into seamless visual interfaces.
+        </div>
+
+        <div class="service-item">
+          <div class="service-left">
+            <span class="service-num">02</span>
+            <span class="service-name">WEB DEVELOPMENT (FRONTEND & MERN)</span>
+          </div>
+          <span class="service-arrow">↓</span>
+        </div>
+        <div class="service-detail">
+          Building fast, responsive, and accessible web applications using modern stacks like React, Node.js, Express, MongoDB, Tailwind CSS, and vanilla HTML5/CSS3.
+        </div>
+
+        <div class="service-item">
+          <div class="service-left">
+            <span class="service-num">03</span>
+            <span class="service-name">BRAND STRATEGY & VISUAL IDENTITY</span>
+          </div>
+          <span class="service-arrow">↓</span>
+        </div>
+        <div class="service-detail">
+          Crafting memorable logo designs, color systems, typography frameworks, and brand guidelines for startups, studios, and tech events.
+        </div>
+
+        <div class="service-item">
+          <div class="service-left">
+            <span class="service-num">04</span>
+            <span class="service-name">INTERACTIVE 3D & MOTION GRAPHICS</span>
+          </div>
+          <span class="service-arrow">↓</span>
+        </div>
+        <div class="service-detail">
+          Creating fluid motion graphics, video promos, and interactive 3D web experiences using After Effects, Blender, and modern web graphics.
+        </div>
+
+        <div class="service-item">
+          <div class="service-left">
+            <span class="service-num">05</span>
+            <span class="service-name">HUMAN-COMPUTER INTERACTION (HCI)</span>
+          </div>
+          <span class="service-arrow">↓</span>
+        </div>
+        <div class="service-detail">
+          Applying ergonomic, accessible, and cognitive principles to digital interfaces, ensuring compliance with WCAG 2.2 AA standards.
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Education & Recognitions Section -->
+    <section class="section" id="education">
+      <div class="section-header">
+        <h2 class="section-title">Education & Recognitions</h2>
+      </div>
+
+      <table class="brutalist-table">
+        <tbody>
+          <tr>
+            <td class="table-label">Education</td>
+            <td class="table-value">
+              <strong>BRAC University</strong> — B.Sc. in Computer Science and Engineering (2022 – Present | CGPA: 3.41 / 4.00)<br>
+              <strong>National Ideal College</strong> — HSC Science (2019 – 2021 | GPA: 5.00 / 5.00)<br>
+              <strong>Motijheel Govt Boys' High School</strong> — SSC Science (2009 – 2019 | GPA: 5.00 / 5.00)
+            </td>
+          </tr>
+          <tr>
+            <td class="table-label">Recognitions</td>
+            <td class="table-value">
+              • <strong>Lead Designer</strong> — Cloud Native Days Bangladesh (2026)<br>
+              • <strong>Top Finalist</strong> — Gen Vote Festival Hackathon (2025)<br>
+              • <strong>Lead Designer</strong> — Kubernetes Community Day Dhaka (2024)<br>
+              • <strong>Lead Designer</strong> — Kubernetes Community Day Chattogram (2024)<br>
+              • <strong>Galactic Local Volunteer</strong> — NASA Space Apps Challenge (2024)<br>
+              • <strong>Bronze Award</strong> — The Duke of Edinburgh's International Award (2023)<br>
+              • <strong>Short Filmmaking Award</strong> — Bangladesh Shilpakala Academy (2020)
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Footer / Contact Section -->
+    <footer class="footer" id="contact">
+      <h2 class="footer-headline">LET'S TALK</h2>
+      
+      <div class="pill-group">
+        <a href="mailto:pritommondal05@gmail.com" class="pill pill-yellow">pritommondal05@gmail.com ↗</a>
+        <a href="https://github.com/pritommondal05" target="_blank" class="pill pill-default">GitHub ↗</a>
+        <a href="https://linkedin.com" target="_blank" class="pill pill-default">LinkedIn ↗</a>
+        <a href="https://behance.net" target="_blank" class="pill pill-default">Behance ↗</a>
+      </div>
+
+      <div class="footer-bottom">
+        <span>Designed & Built with Precision</span>
+        <span>© 2026 PRITOM MONDAL. All rights reserved.</span>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- Scroll To Top Button (Joshua Kaplan Exact Circular Button) -->
+  <button class="scroll-top-btn" id="scroll-top-btn" aria-label="Scroll back to top">↑</button>
+
+  <!-- Image Preview Modal -->
+  <div class="modal-overlay" id="image-modal">
+    <div class="modal-content">
+      <button class="modal-close" id="modal-close" aria-label="Close modal">✕</button>
+      <h3 style="font-size: 18px; font-weight: 800; margin-bottom: 4px;">Pritom Mondal</h3>
+      <p style="font-size: 14px; color: var(--text-secondary);">UI/UX Designer & Developer — Dhaka, Bangladesh</p>
+      <img src="pritom_portrait.webp" alt="Pritom Mondal Enlarged Portrait" class="modal-img">
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

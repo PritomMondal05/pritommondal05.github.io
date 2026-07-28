@@ -1,0 +1,197 @@
+Website Design Specification for Pritom Mondal
+
+Based on the provided reference UI ("image_71481b.jpg"), this document outlines the structure, content, and styling guidelines for a clean, minimalist, black-and-white portfolio website, populated with information from Pritom Mondal's resume.
+
+Global Styling Guidelines
+
+Color Palette: Strictly Monochrome (Black, White, and shades of Grey).
+
+Typography:
+
+Headings: Large, bold, sans-serif font (e.g., Helvetica, Inter, or a similar modern grotesque). High contrast.
+
+Body Text: Smaller, clean sans-serif for high readability.
+
+Caps: Extensive use of ALL CAPS for navigation, section headers, and stylistic elements.
+
+Layout:
+
+Whitespace-heavy, grid-based layout.
+
+Distinct horizontal sections separating content.
+
+Use of delicate, thin lines (borders) to define sections and UI elements.
+
+UI Elements:
+
+Pill-shaped (rounded-full) buttons and tags.
+
+Circular icon buttons (specifically with directional arrows).
+
+Subtle hover effects (e.g., inverting colors from black-on-white to white-on-black).
+
+Page Structure & Content
+
+The website is a single-page scrolling portfolio or structured with very distinct sections.
+
+1. Navigation Bar (Top)
+
+Logo/Brand: PRITOM MONDAL or a stylized logo on the far left.
+
+Navigation Links (Pill-shaped container): HOME | ABOUT ME | EXPERIENCE | EDUCATION | SERVICES | PROJECTS (Active state could be indicated by a bolder font or a slight background tint).
+
+Social Icons (Far Right): Small circular icons for GitHub, LinkedIn, Behance, and a hamburger menu icon (=).
+
+2. Hero Section
+
+Main Headline (Massive Typography):
+EXPLORE MY
+PORTFOLIO
+(Text is split across lines, slightly overlapping or tightly interacting with the portrait image).
+
+Supporting Text (Left of Portrait): DESIGNER EST.2020 (Referencing the start of PGXR/Sahitya Sandarsana).
+
+Action Button (Left of Portrait): A circular button with a downward arrow (↓), suggesting "Scroll down".
+
+Central Image: A large, high-contrast, black-and-white cutout portrait of Pritom Mondal.
+
+Supporting Text (Right of Portrait): "I AM PASSIONATE ABOUT CREATING USER-CENTERED, ACCESSIBLE, AND INNOVATIVE SOLUTIONS THAT ENHANCE DIGITAL EXPERIENCES."
+
+Skills List (Far Right, vertically stacked):
+
+UI/UX
+
+WEB DEVELOPMENT
+
+MULTIMEDIA
+
+HCI
+
+EXPERT FIGMA
+
+3. About Section
+
+Section Header: ABOUT with a circular, diagonal-up arrow button (↗) next to it, implying "Read More" or linking to a full resume.
+
+Introductory Text: "PRITOM MONDAL IS A PASSIONATE DESIGNER & DEVELOPER, KNOWN FOR HIS CREATIVE VISION AND TECHNICAL EXPERTISE IN BUILDING IMPACTFUL, INCLUSIVE TECHNOLOGIES."
+
+4. Experience Section
+
+Section Header: EXPERIENCE
+
+Layout Style: A clean timeline or list format using thin horizontal borders to separate entries.
+
+Entry Structure (for each role):
+
+Left Column: Date Range (e.g., DEC 2025 - PRESENT)
+
+Right Column (Main Content):
+
+Role & Company: e.g., UI/UX DESIGNER @ GRAPHLAND
+
+Description: Brief 1-2 sentence summary of impact (e.g., "Designed easy-to-use interfaces by turning complex ideas into simple, clean layouts.")
+
+Action: A small circular button (↗) or downward arrow (↓) to expand for more details.
+
+Content to Include: Graphland, Octobrain, PGXR, Store To You.
+
+5. Education Section
+
+Section Header: EDUCATION
+
+Layout Style: Similar to the Experience section, using a list or grid with delicate borders.
+
+Entry Structure:
+
+Left Column: Date Range (e.g., 2022 - PRESENT)
+
+Right Column:
+
+Institution: BRAC UNIVERSITY
+
+Degree: B.SC. IN COMPUTER SCIENCE AND ENGINEERING
+
+Details: CGPA: 3.41 / 4.00
+
+Content to Include: BRAC University, National Ideal College, Motijheel Government Boys' High School.
+
+6. Featured Project Section
+
+Section Header: FEATURED PROJECT
+
+Filter Tags (Pill-shaped):
+
+WEB DESIGN (Black background, white text - Active)
+
+UI/UX (White background, black border)
+
+DEVELOPMENT
+
+(Also includes a circular ↗ button on the far right).
+
+Project Cards (Grid layout - e.g., showing 2-3 top projects):
+
+Project 1: FundBridge
+
+Image: Placeholder for a clean UI mockup of the platform.
+
+Title: FUNDBRIDGE
+
+Category Tag: WEB APP
+
+Description: "Crowdfunding & donation platform connecting social causes."
+
+Project 2: Bangladesh 3D Voting Simulator
+
+Image: Placeholder for a 3D interface mockup.
+
+Title: 3D VOTING SIMULATOR
+
+Category Tag: UI/UX & INTERACTION
+
+Description: "Interactive simulation making electoral processes accessible."
+
+7. Services Section
+
+Section Header: THE SERVICES WE PROVIDE
+
+Description: "CREATING VISUALLY APPEALING AND FUNCTIONAL DIGITAL EXPERIENCES TAILORED TO USER NEEDS, PROVIDING A CONSISTENT JOURNEY ACROSS PLATFORMS."
+
+Services List (Accordion or List style, bordered rows):
+Each row has a number, service name, and a downward arrow (↓). Hover state turns the row black with white text and a right arrow (→).
+
+UI/UX RESEARCH (↓)
+
+SERVICE DESIGN (↓)
+
+DESIGN THINKING (→ - Simulated Hover State)
+
+BRAND STRATEGY (↓)
+
+WEB DEVELOPMENT (↓)
+
+DIGITAL MARKETING (↓)
+
+VIDEO PRODUCTION (↓)
+
+8. Footer (Contact/Call to Action)
+
+Background: Solid Black section.
+
+Text: White.
+
+Top Links (Small text, scattered): GITHUB, LINKEDIN, BEHANCE, EMAIL.
+
+Main Headline (Massive Typography): LET'S TALK
+
+Action Links (Pill-shaped buttons along the bottom):
+
+GITHUB
+
+LINKEDIN
+
+BEHANCE
+
+CONTACT ME (Link to mailto:pritommondal05@gmail.com)
+
+Copyright (Bottom Right): Small text, e.g., © 2026 PRITOM MONDAL.

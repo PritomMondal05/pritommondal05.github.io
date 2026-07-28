@@ -1,0 +1,825 @@
+/* Portfolio CSS - Joshua Kaplan Inspired UI Style with Dark Mode Support */
+@import url('./Font/stylesheet.css');
+
+:root {
+  --bg-primary: #fcfcfc;
+  --bg-surface: #ffffff;
+  --bg-card: #f4f4f4;
+  --bg-hover: #eaeaea;
+  
+  --text-primary: #111111;
+  --text-secondary: #555555;
+  --text-tertiary: #888888;
+  
+  --border-color: #111111;
+  --border-light: #e0e0e0;
+  --border-muted: #eeeeee;
+  
+  /* Pill Colors matching Joshua Kaplan visual reference */
+  --pill-yellow-bg: #eef483;
+  --pill-yellow-text: #111111;
+  
+  --pill-blue-bg: #d4e9f7;
+  --pill-blue-text: #0d3859;
+  
+  --pill-green-bg: #52ea9c;
+  --pill-green-text: #053b1e;
+  
+  --pill-purple-bg: #e4d5ff;
+  --pill-purple-text: #321466;
+
+  --pill-orange-bg: #ffe3c4;
+  --pill-orange-text: #592d00;
+  
+  --pill-pink-bg: #ffd6d6;
+  --pill-pink-text: #5e1313;
+
+  --pill-default-bg: #ffffff;
+  --pill-default-text: #111111;
+  
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
+  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.12);
+  
+  --font-family: 'Helvetica Now Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --transition-fast: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-normal: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Dark Mode Theme Overrides */
+[data-theme="dark"] {
+  --bg-primary: #121212;
+  --bg-surface: #1a1a1a;
+  --bg-card: #222222;
+  --bg-hover: #2a2a2a;
+  
+  --text-primary: #f5f5f5;
+  --text-secondary: #b0b0b0;
+  --text-tertiary: #777777;
+  
+  --border-color: #ffffff;
+  --border-light: #333333;
+  --border-muted: #242424;
+  
+  --pill-yellow-bg: #d8df42;
+  --pill-yellow-text: #000000;
+  
+  --pill-blue-bg: #3275a8;
+  --pill-blue-text: #ffffff;
+  
+  --pill-green-bg: #27a862;
+  --pill-green-text: #ffffff;
+  
+  --pill-purple-bg: #7b4ec2;
+  --pill-purple-text: #ffffff;
+
+  --pill-orange-bg: #c96b18;
+  --pill-orange-text: #ffffff;
+  
+  --pill-pink-bg: #c94040;
+  --pill-pink-text: #ffffff;
+
+  --pill-default-bg: #242424;
+  --pill-default-text: #ffffff;
+  
+  --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.6);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-family);
+  font-weight: 400;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color var(--transition-normal), color var(--transition-normal);
+  padding-bottom: 80px;
+}
+
+/* Base Container & Grid */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 0 16px;
+  }
+}
+
+/* Header & Sticky Navigation Bar */
+.navbar-wrapper {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(252, 252, 252, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-light);
+  transition: background-color var(--transition-normal), border-color var(--transition-normal);
+}
+
+[data-theme="dark"] .navbar-wrapper {
+  background-color: rgba(18, 18, 18, 0.92);
+}
+
+.navbar {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: var(--text-primary);
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.brand-logo svg {
+  height: 24px;
+  width: auto;
+  fill: currentColor;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  list-style: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--text-secondary);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 999px;
+  transition: all var(--transition-fast);
+  border: 1px solid transparent;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--text-primary);
+  background-color: var(--bg-hover);
+  border-color: var(--border-light);
+}
+
+.theme-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--bg-surface);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: var(--font-family);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.theme-toggle-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Mobile Nav Toggle */
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: 1px solid var(--border-color);
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 14px;
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  .nav-links.mobile-open {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--bg-primary);
+    flex-direction: column;
+    padding: 16px 24px;
+    border-bottom: 1px solid var(--border-light);
+    box-shadow: var(--shadow-lg);
+  }
+  .mobile-menu-btn {
+    display: block;
+  }
+}
+
+/* Hero Section */
+.hero-section {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.hero-title {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+}
+
+@media (max-width: 640px) {
+  .hero-title {
+    font-size: 34px;
+  }
+}
+
+/* Pill / Tag Component (Joshua Kaplan Exact Style) */
+.pill-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 14px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid var(--border-color);
+  text-decoration: none;
+  font-family: var(--font-family);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast), background-color var(--transition-fast);
+  white-space: nowrap;
+}
+
+.pill:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Specific Pill Variants */
+.pill-yellow {
+  background-color: var(--pill-yellow-bg);
+  color: var(--pill-yellow-text);
+}
+
+.pill-blue {
+  background-color: var(--pill-blue-bg);
+  color: var(--pill-blue-text);
+}
+
+.pill-green {
+  background-color: var(--pill-green-bg);
+  color: var(--pill-green-text);
+}
+
+.pill-purple {
+  background-color: var(--pill-purple-bg);
+  color: var(--pill-purple-text);
+}
+
+.pill-orange {
+  background-color: var(--pill-orange-bg);
+  color: var(--pill-orange-text);
+}
+
+.pill-pink {
+  background-color: var(--pill-pink-bg);
+  color: var(--pill-pink-text);
+}
+
+.pill-default {
+  background-color: var(--pill-default-bg);
+  color: var(--pill-default-text);
+}
+
+/* Bio & Portrait Banner Grid */
+.hero-content-grid {
+  display: grid;
+  grid-template-columns: 1fr 240px;
+  gap: 32px;
+  align-items: start;
+}
+
+@media (max-width: 768px) {
+  .hero-content-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.bio-text {
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--text-primary);
+  font-weight: 400;
+}
+
+.bio-text strong {
+  font-weight: 800;
+}
+
+.portrait-card {
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: var(--bg-surface);
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-fast);
+}
+
+.portrait-card:hover {
+  transform: scale(1.02);
+}
+
+.portrait-img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+  filter: grayscale(20%);
+  transition: filter var(--transition-fast);
+}
+
+.portrait-card:hover .portrait-img {
+  filter: grayscale(0%);
+}
+
+.portrait-meta {
+  padding: 12px 14px;
+  border-top: 1px solid var(--border-light);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  background-color: var(--bg-card);
+}
+
+.status-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #27a862;
+  font-weight: 600;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #27a862;
+  display: inline-block;
+  box-shadow: 0 0 0 2px rgba(39, 168, 98, 0.2);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(39, 168, 98, 0.5); }
+  70% { transform: scale(1); box-shadow: 0 0 0 6px rgba(39, 168, 98, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(39, 168, 98, 0); }
+}
+
+/* Section Header */
+.section {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.section-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+}
+
+/* Filter Controls */
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.filter-btn {
+  background: var(--bg-surface);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-light);
+  padding: 5px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: var(--font-family);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.filter-btn:hover, .filter-btn.active {
+  background: var(--text-primary);
+  color: var(--bg-primary);
+  border-color: var(--text-primary);
+}
+
+/* Brutalist Project Table / Entry (Exact Joshua Kaplan UI Layout) */
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.project-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-number {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+  letter-spacing: -0.04em;
+}
+
+.brutalist-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-top: 1px solid var(--border-color);
+}
+
+.brutalist-table tr {
+  border-bottom: 1px solid var(--border-light);
+}
+
+.brutalist-table td {
+  padding: 12px 0;
+  vertical-align: top;
+  font-size: 15px;
+}
+
+.table-label {
+  width: 120px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  padding-right: 16px;
+}
+
+.table-value {
+  color: var(--text-primary);
+  font-weight: 400;
+}
+
+.project-header-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.project-name {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.project-url-link {
+  color: var(--text-primary);
+  text-decoration: none;
+  font-family: var(--font-family);
+  border-bottom: 1px solid var(--text-primary);
+  font-weight: 500;
+  transition: opacity var(--transition-fast);
+}
+
+.project-url-link:hover {
+  opacity: 0.7;
+}
+
+/* Expandable Drawer Toggle */
+.details-toggle-btn {
+  margin-top: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--bg-card);
+  color: var(--text-primary);
+  border: 1px solid var(--border-light);
+  border-radius: 6px;
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: var(--font-family);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.details-toggle-btn:hover {
+  background: var(--bg-hover);
+}
+
+.project-drawer {
+  display: none;
+  padding: 16px;
+  margin-top: 12px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+}
+
+.project-drawer.open {
+  display: block;
+}
+
+.drawer-content {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+.drawer-content ul {
+  padding-left: 20px;
+  margin-top: 8px;
+}
+
+.drawer-content li {
+  margin-bottom: 4px;
+}
+
+/* Brutalist Experience & Education Timelines */
+.timeline-item {
+  border-top: 1px solid var(--border-color);
+  padding: 16px 0;
+
+}
+
+.timeline-item:last-child {
+  border-bottom: 1px solid var(--border-light);
+}
+
+.timeline-grid {
+  display: grid;
+  grid-template-columns: 140px 1fr auto;
+  gap: 16px;
+  align-items: start;
+}
+
+@media (max-width: 640px) {
+  .timeline-grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+}
+
+.timeline-year {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.timeline-role {
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.timeline-org {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+
+.timeline-desc {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+/* Accordion Services List */
+.services-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-item {
+  border-top: 1px solid var(--border-color);
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: padding var(--transition-fast), background-color var(--transition-fast);
+}
+
+.service-item:last-child {
+  border-bottom: 1px solid var(--border-light);
+}
+
+.service-left {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.service-num {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-tertiary);
+  width: 28px;
+}
+
+.service-name {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--text-primary);
+
+}
+
+.service-arrow {
+  font-size: 20px;
+  transition: transform var(--transition-fast);
+}
+
+.service-item:hover .service-arrow {
+  transform: translateX(4px);
+}
+
+.service-detail {
+  display: none;
+  padding: 0 0 20px 52px;
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.service-item.open + .service-detail {
+  display: block;
+}
+
+/* Floating Scroll To Top Button (Joshua Kaplan Exact Style) */
+.scroll-top-btn {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: var(--text-primary);
+  color: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: var(--shadow-lg);
+  transition: transform var(--transition-fast), opacity var(--transition-fast);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 90;
+
+}
+
+.scroll-top-btn.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.scroll-top-btn:hover {
+  transform: translateY(-4px) scale(1.05);
+}
+
+/* Footer Section */
+.footer {
+  padding-top: 64px;
+  padding-bottom: 48px;
+}
+
+.footer-headline {
+  font-size: 56px;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  margin-bottom: 32px;
+}
+
+@media (max-width: 640px) {
+  .footer-headline {
+    font-size: 36px;
+  }
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border-light);
+  font-size: 14px;
+  color: var(--text-tertiary);
+}
+
+/* Modal for Image Preview */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(8px);
+  z-index: 200;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.modal-overlay.active {
+  display: flex;
+}
+
+.modal-content {
+  max-width: 600px;
+  width: 100%;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 24px;
+  position: relative;
+  box-shadow: var(--shadow-lg);
+}
+
+.modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  font-size: 16px;
+  color: var(--text-primary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-img {
+  width: 100%;
+  border-radius: 12px;
+  margin-top: 12px;
+  border: 1px solid var(--border-light);
+}
