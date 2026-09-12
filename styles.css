@@ -164,6 +164,36 @@ body {
   border-left: 1px solid var(--border-color);
 }
 
+.top-right-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.portfolio-top-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-primary);
+  background-color: var(--bg-surface);
+  padding: 6px 14px;
+  border-radius: 999px;
+  text-decoration: none;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.2s ease, background-color var(--transition-fast), border-color var(--transition-fast);
+}
+
+.portfolio-top-btn:hover {
+  transform: translateY(-2px) scale(1.03);
+  background-color: var(--bg-hover);
+  border-color: var(--text-primary);
+  box-shadow: var(--shadow-sm);
+}
+
 .resume-download-btn {
   display: inline-flex;
   align-items: center;
@@ -919,41 +949,47 @@ body {
   margin-bottom: 6px;
 }
 
-/* Project Screenshot Frame (Landing Page SS Upload Area) */
+/* Project Screenshot Cover Frame */
 .project-screenshot-frame {
   width: 100%;
-  height: 220px;
+  height: 250px;
   border-radius: 12px;
-  border: 1px dashed var(--border-light);
+  border: 1px solid var(--border-light);
   background-color: var(--bg-surface);
   margin-top: 14px;
   margin-bottom: 14px;
   overflow: hidden;
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: border-color var(--transition-fast), background-color var(--transition-fast);
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast), transform var(--transition-fast);
 }
 
 .project-screenshot-frame:hover {
-  border-style: solid;
   border-color: var(--text-primary);
-  background-color: var(--bg-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px -6px rgba(0, 0, 0, 0.12);
 }
 
 .project-screenshot-img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  object-position: center;
+  object-fit: cover;
+  object-position: top center;
   display: block;
+  transition: transform 0.4s ease;
+}
+
+.project-screenshot-frame:hover .project-screenshot-img {
+  transform: scale(1.025);
 }
 
 @media (max-width: 640px) {
   .project-screenshot-frame {
     height: auto;
-    min-height: 160px;
+    min-height: 170px;
     aspect-ratio: 16 / 9;
   }
 }
