@@ -164,35 +164,6 @@ body {
   border-left: 1px solid var(--border-color);
 }
 
-.top-right-group {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  flex-wrap: wrap;
-}
-
-.portfolio-top-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 12px;
-  font-weight: 700;
-  color: var(--text-primary);
-  background-color: var(--bg-surface);
-  padding: 6px 14px;
-  border-radius: 999px;
-  text-decoration: none;
-  border: 1px solid var(--border-color);
-  box-shadow: var(--shadow-sm);
-  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.2s ease, background-color var(--transition-fast), border-color var(--transition-fast);
-}
-
-.portfolio-top-btn:hover {
-  transform: translateY(-2px) scale(1.03);
-  background-color: var(--bg-hover);
-  border-color: var(--text-primary);
-  box-shadow: var(--shadow-sm);
-}
 
 .resume-download-btn {
   display: inline-flex;
@@ -602,6 +573,26 @@ body {
   color: var(--pill-default-text);
 }
 
+.pill-portfolio {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: var(--pill-yellow-bg);
+  color: var(--pill-yellow-text);
+  font-weight: 700;
+  border: 1px solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+.pill-portfolio:hover {
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: var(--shadow-md);
+  filter: brightness(0.95);
+}
+
 /* Bio & Portrait Banner Grid */
 .hero-content-grid {
   display: grid;
@@ -949,10 +940,11 @@ body {
   margin-bottom: 6px;
 }
 
-/* Project Screenshot Cover Frame */
+/* Project Screenshot Cover Frame (Exact 16:9 Aspect Ratio, Zero White Space) */
 .project-screenshot-frame {
   width: 100%;
-  height: 250px;
+  aspect-ratio: 16 / 9;
+  height: auto;
   border-radius: 12px;
   border: 1px solid var(--border-light);
   background-color: var(--bg-surface);
@@ -974,24 +966,16 @@ body {
 }
 
 .project-screenshot-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: top center;
-  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center top !important;
+  display: block !important;
   transition: transform 0.4s ease;
 }
 
 .project-screenshot-frame:hover .project-screenshot-img {
   transform: scale(1.025);
-}
-
-@media (max-width: 640px) {
-  .project-screenshot-frame {
-    height: auto;
-    min-height: 170px;
-    aspect-ratio: 16 / 9;
-  }
 }
 
 .screenshot-placeholder-content {
